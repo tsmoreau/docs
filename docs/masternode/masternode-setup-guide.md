@@ -12,7 +12,7 @@ You alone must fully secure your server.
 The following are required items and server specifications. 
 [Click here for more details](https://docs.tao.network/masternode/requirements/)
 
-* 50,000 TAO deposit
+* 100,000 TAO deposit
 * Server (cloud-VPS or your-own)
     * 16 vCPU cores (Prefer higher clock speed. Usually found on "CPU optimized" cloud providers' servers)
     * 32GB RAM
