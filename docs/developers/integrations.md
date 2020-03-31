@@ -1,13 +1,13 @@
-TomoChain is an EVM-compatible public blockchain. So you can use [TomoChain JSON-RPC APIs](https://apidocs.tomochain.com/#tomochain-apis-json-rpc) the same as Ethereum.
+Tao is an EVM-compatible public blockchain. So you can use [Tao JSON-RPC APIs](https://apidocs.tao.network/#tao-apis-json-rpc) the same as Ethereum.
 
-It means that you can use [Web3 library](https://web3js.readthedocs.io) to create a wallet, check the balance or send the transaction. You just need to change RPC endpoint to TomoChain fullnode or TomoChain public RPC endpoint.
-You can take a look to [TomoChain Networks](https://docs.tomochain.com/general/networks/) page to the details of Testnet/Mainnet network information.
+It means that you can use [Web3 library](https://web3js.readthedocs.io) to create a wallet, check the balance or send the transaction. You just need to change RPC endpoint to Tao fullnode or Tao public RPC endpoint.
+You can take a look to [Tao Networks](https://docs.tao.network/general/networks/) page to the details of Testnet/Mainnet network information.
 
-## Connect to TomoChain nodes
+## Connect to Tao nodes
 ```javascript
 import Web3 from 'web3';
 
-const web3 = new Web3('https://rpc.tomochain.com');
+const web3 = new Web3('https://rpc.tao.network');
 ```
 
 ## Create wallet
@@ -78,8 +78,8 @@ web3.eth.sendTransaction(transactionObject [, callback])
 ```javascript
 const Web3 = require('web3')
 
-// Connect to TomoChain nodes
-const provider = new Web3.providers.HttpProvider('https://rpc.tomochain.com')
+// Connect to Tao nodes
+const provider = new Web3.providers.HttpProvider('https://rpc.tao.network')
 const web3 = new Web3(provider)
 
 // Unlock wallet by private key
@@ -114,8 +114,8 @@ web3.eth.sign(dataToSign, address [, callback])
 ```javascript
 const Web3 = require('web3')
 
-// Connect to TomoChain nodes
-const provider = new Web3.providers.HttpProvider('https://rpc.tomochain.com')
+// Connect to Tao nodes
+const provider = new Web3.providers.HttpProvider('https://rpc.tao.network')
 const web3 = new Web3(provider)
 
 // Unlock wallet by private key
@@ -158,18 +158,18 @@ Promise returns Object - A transaction receipt object, or null when no receipt w
 ## Irreversible blocks
 In normal case, you can wait for 60 confirmations, then checking block finality via `eth_getBlockFinalityByNumber` or `eth_getBlockFinalityByHash` API:
 
-- [eth_getBlockFinalityByNumber](https://apidocs.tomochain.com/#eth_getblockfinalitybynumber)
-- [eth_getBlockFinalityByHash](https://apidocs.tomochain.com/#eth_getblockFinalitybyhash)
+- [eth_getBlockFinalityByNumber](https://apidocs.tao.network/#eth_getblockfinalitybynumber)
+- [eth_getBlockFinalityByHash](https://apidocs.tao.network/#eth_getblockFinalitybyhash)
 
 If `result` > 75, it means block finality and Irreversible.
 
 
-## How does TomoChain smart contract work?
+## How does Tao smart contract work?
 Same as Ethereum, supports Solidity compiler version < 0.5.0
 
 ## Possible to create muti-signature wallet?
 Yes. Same as Ethereum. You can use Gnosis MultiSigWallet.
 
-## Run TomoChain node
-Refer to [Run TomoChain Fullnode](https://docs.tomochain.com/masternode/requirements/)
+## Run Tao node
+Refer to [Run Tao Fullnode](https://docs.tao.network/masternode/requirements/)
 

@@ -1,1 +1,1 @@
-For developers who are interested in building and deploying an ICO smart contract on TomoChain, please refer to [this article](https://medium.com/tomochain/how-to-deploy-an-ico-smart-contract-on-tomochain-782142d95538) for a detailed guideline.
+For developers who are interested in building and deploying an ICO smart contract on Tao, please refer to [this article](https://medium.com/taoblockchain/how-to-deploy-an-ico-smart-contract-on-tao-782142d95538) for a detailed guideline.

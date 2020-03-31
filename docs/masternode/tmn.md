@@ -1,4 +1,4 @@
-We made a simple command line interface called [tmn](https://github.com/tomochain/masternode) to easily and quickly start a TomoChain masternode.
+We made a simple command line interface called [tmn](https://github.com/taoblockchain/masternode) to easily and quickly start a Tao masternode.
 It takes care of starting the necessary docker containers with the proper settings for you.
 It will really suit you if you don't already have a big infrastructure running.
 Spin up a machine in your favorite cloud and get your masternode running in a few minutes!
@@ -105,15 +105,15 @@ Slug format authorize all letters and numbers, dashes ("-") and underscores ("\_
 You can name it to reflect your identity, company name, etc.
 
 `--net`: The network your full node will connect to.
-You can choose here to connect it to the TomoChain Testnet or Mainnet (once launched).
+You can choose here to connect it to the Tao Testnet or Mainnet (once launched).
 
 `--pkey`: The private key of the account that your full node will use.
-A TomoChain full node uses an account to be uniquely identified and to receive transaction fee.
+A Tao full node uses an account to be uniquely identified and to receive transaction fee.
 
 !!! note "Important note:"
     We advise for security measures to use a fresh new account for your masternode.
     This is not the account who will receive the rewards.
-    The rewards are sent to the account who will make the 50k TOMO initial deposit.
+    The rewards are sent to the account who will make the 50k TAO initial deposit.
 
 `--api`: Expose RPC and websocket on ports `8545` and `8546`.
 
@@ -127,7 +127,7 @@ It could look like this:
 tmn start --name [YOUR_NODE_NAME] --net testnet --pkey [YOUR_COINBASE_PRIVATE_KEY] --api
 ```
 
-Once started, you should see your node on the [stats page](https://stats.testnet.tomochain.com)!
+Once started, you should see your node on the [stats page](https://stats.testnet.tao.network)!
 
 Note: it can take up to one hour to properly sync the entire blockchain.
 

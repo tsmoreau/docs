@@ -1,6 +1,6 @@
-# Tomochain Masternode Setup Guide
+# Tao Masternode Setup Guide
 
-This is a procedural step-by-step guide to setting up your first Tomochain Masternode using the `tmn` tool.
+This is a procedural step-by-step guide to setting up your first Tao Masternode using the `taomn` tool.
 It is meant for first-time and intermediate-level masternode operators.
 
 Security Disclaimer:
@@ -10,9 +10,9 @@ You alone must fully secure your server.
 
 ## Technical Requirements / Recommendations
 The following are required items and server specifications. 
-[Click here for more details](https://docs.tomochain.com/masternode/requirements/)
+[Click here for more details](https://docs.tao.network/masternode/requirements/)
 
-* 50,000 TOMO deposit
+* 50,000 TAO deposit
 * Server (cloud-VPS or your-own)
     * 16 vCPU cores (Prefer higher clock speed. Usually found on "CPU optimized" cloud providers' servers)
     * 32GB RAM
@@ -20,7 +20,7 @@ The following are required items and server specifications.
     * 100 GB of storage for the base chaindata
     * ~1 GB of weekly data storage space increase (reccomend SSD-based Block Storage; low-latency, not NAS speeds)
     * Note: These numbers may decrease with ongoing optimisations to the code base.
-* 2 TomoChain wallets (addresses) - [see details below](#7-create-wallet-addresses)
+* 2 Tao wallets (addresses) - [see details below](#7-create-wallet-addresses)
 
 ## Knowledge Requirements
 * **VPS Setup** - You are able to setup your own cloud-hosted virtual private server (VPS)
@@ -93,8 +93,8 @@ It is in your best interest because if any one popular provider goes down, other
 Choose **Ubuntu 18.04**.
 This is an LTS version ([Long Term Support](https://wiki.ubuntu.com/LTS)).
 LTS versions are more stable and have seen less errors when installing Docker and Python.
-You must use Ubuntu 18.04 to seek support from the wider community or Tomochain.
-If you need help with this, [see this example](https://medium.com/tomochain/how-to-run-a-tomochain-masternode-from-a-to-z-3793752dc3d1#6122).
+You must use Ubuntu 18.04 to seek support from the wider community or Tao.
+If you need help with this, [see this example](https://medium.com/taoblockchain/how-to-run-a-tao-masternode-from-a-to-z-3793752dc3d1#6122).
 
 > Data Storage: It is recommended to assure that your provider has Block Storage or expandable disk space on SSD drives (more performant).
 Block Storage is pay-as-you-go disk space that you can expand in the future.
@@ -109,7 +109,7 @@ Some providers allow you to set it up upon server creation.
 
 ## 3. Change passwords and accounts (logged in as root user)
 Login to your newly created server with SSH / Putty.  
-If you need help with this, [see this example](https://medium.com/tomochain/how-to-run-a-tomochain-masternode-from-a-to-z-3793752dc3d1#20a7).
+If you need help with this, [see this example](https://medium.com/taoblockchain/how-to-run-a-tao-masternode-from-a-to-z-3793752dc3d1#20a7).
 
 ```shell
 ssh root@178.62.127.177
@@ -180,7 +180,7 @@ After this, you will almost always login as your new user.
 
 
 ## 4. Configure your VPS (remain logged in as root user)
-We will now prepare the [prerequisites for tmn](https://docs.tomochain.com/get-started/run-node/).
+We will now prepare the [prerequisites for taomn](https://docs.tao.network/get-started/run-node/).
 You need Python 3.6+ and Docker installed.
 
 ### Upgrade operating system
@@ -220,7 +220,7 @@ python3 --version
 This topic is optional, but highly recommended.
 If the default SSH port is not changed, you could see nefarious connection-attempts in a short time-period.
 
-[Look at our wiki security doc for more details](https://github.com/tomochain/docs/wiki/Security-of-Masternodes)
+[Look at our wiki security doc for more details](https://github.com/taoblockchain/docs/wiki/Security-of-Masternodes)
 
 At a minimum, you will want to consider:
 
@@ -319,7 +319,7 @@ sudo systemctl status docker  # hit 'q' to exit
 **Docker CE is installed and running.**
 
 Congratulations! You have installed Python and Docker.
-You have the prerequisites ready to run TomoChain’s tmn.
+You have the prerequisites ready to run Tao’s taomn.
 
 ********************
 TROUBLESHOOTING
@@ -335,42 +335,42 @@ Please run this, close your session and open it again.
 
 
 
-## 6. Installing TMN utility
-`Tmn` is a simple interface created by TomoChain developers to **help you quickstart your masternode**.
+## 6. Installing TAOMN utility
+`taomn` is a simple interface created by Tao developers to **help you quickstart your masternode**.
 It is installed as a python package and it utilizes two docker containers once operating.
-We will follow through the steps found here: [guide to install tmn](https://docs.tomochain.com/get-started/run-node/)
+We will follow through the steps found here: [guide to install taomn](https://docs.tao.network/get-started/run-node/)
 
-> “We made a simple command line interface called tmn to easily and quickly start a TomoChain masternode.
+> “We made a simple command line interface called taomn to easily and quickly start a Tao masternode.
 It takes care of starting the necessary docker containers with the proper settings for you.
 It will really suit you if you don’t already have a big infrastructure running.
 Spin up a machine in your favorite cloud and get your masternode running in a few minutes!”
 
-Install and update the tomochain-created `tmn` utility from pip:
+Install and update the Tao-created `taomn` utility from pip:
 
 ```shell
-pip3 install --user tmn
-pip3 install -U tmn
+pip3 install --user taomn
+pip3 install -U taomn
 ```
 
 > Watch out for WARNINGs or ERRORs and troubleshoot (see end of this section).
 
-To check that `tmn` has been correctly installed, use the following command to show some tmn info:
+To check that `taomn` has been correctly installed, use the following command to show some taomn info:
 
 ```shell
-pip3 show tmn
+pip3 show taomn
 
-Name: tmn
+Name: taomn
 Version: 0.5
 Summary: Quickstart your masternode
-Home-page: https://tomochain.com
+Home-page: https://tao.network
 Author: Etienne Napoleone
-Author-email: etienne@tomochain.com
+Author-email: info@tao.network
 License: GPL-3.0+
 Location: /home/michael/.local/lib/python3.6/site-packages
 Requires: python-slugify, click, clint, pastel, docker
 ```
 
-The next step will be to actually **START TMN**, however we cannot do this until we have two wallet addresses.
+The next step will be to actually **START TAOMN**, however we cannot do this until we have two wallet addresses.
 See the next section for this.
 
 ********************
@@ -413,8 +413,8 @@ sudo apt install python3-dev
 
 
 ## 7. Create Wallet Addresses
-Before being able to proceed further, you will need **two** seperate Tomo wallet addresses to operate a masternode.
-One helps to operate the masternode day-to-day, and the other is where the 50,000 TOMO (50k) is staked from.
+Before being able to proceed further, you will need **two** seperate Tao wallet addresses to operate a masternode.
+One helps to operate the masternode day-to-day, and the other is where the 50,000 TAO (50k) is staked from.
 The genius of this is that the wallet where the 50k will pass through (and where rewards will eventually come into) is never stored or seen by the VPS server.
 This is a security strategy that keeps your coins safe.
 
@@ -435,7 +435,7 @@ Give it to no one.
 
 * WALLET1 Suggestions - 
   If setting up a single masternode, you can use a mobile wallet.
-  Binances `Trust Wallet` and Tomochains `Tomo Wallet` apps are best.
+  Binances `Trust Wallet` and Taos `Tao Wallet` apps are best.
   Alternatives are Metamask and MEW (MyEtherWallet), in that order.
   You can use Ledger Hardware Wallet, however the added security on WALLET1 isn't as necessary.
 
@@ -443,7 +443,7 @@ Give it to no one.
   Preferred to use Ledger / Hardware Wallet (if possible) in combo with Metamask because 50k and rewards will be handled here.
   Assure to use an address you do not have history on eth chain with - otherwise others will be able to see your unrelated investment history.
 
-Because most wallet apps do not have Tomo mainnet as a selectable network yet, you will need to manually add the new mainnet if you have not already. 
+Because most wallet apps do not have Tao mainnet as a selectable network yet, you will need to manually add the new mainnet if you have not already. 
 See the first link below for the guide on how to do this.
 
 How to Set Up a Wallet:
@@ -452,59 +452,59 @@ How to Set Up a Wallet:
 
 More info:
 
-* [Using Metamask or Mobile Tomo Wallet](https://docs.tomochain.com/get-started/wallet/)
-* [Links to mobile downloads and other tomo info](https://medium.com/tomochain/tomochain-all-in-one-overview-9fce16e13b5#6b8c)
-* [Old Masternode guide (testnet) Section on wallets](https://medium.com/tomochain/how-to-run-a-tomochain-masternode-from-a-to-z-3793752dc3d1#0e58)
+* [Using Metamask or Mobile Tao Wallet](https://docs.tao.network/get-started/wallet/)
+* [Links to mobile downloads and other tao info](https://medium.com/taoblockchain/taoblockchain-all-in-one-overview-9fce16e13b5#6b8c)
+* [Old Masternode guide (testnet) Section on wallets](https://medium.com/taoblockchain/how-to-run-a-tao-masternode-from-a-to-z-3793752dc3d1#0e58)
 <br/>
 
 
 
-## 8. Run TMN
-Below, you will finally start your Tomochain node with a utility called `tmn`.
+## 8. Run TAOMN
+Below, you will finally start your Tao node with a utility called `taomn`.
 
-### Initial TMN start
+### Initial TAOMN start
 **IMPORTANT:** Logout and SSH back in so that the $PATH variable takes effect.
-This allows you to run `tmn` from any directory.
+This allows you to run `taomn` from any directory.
 
 ```shell
 exit
 ssh michael@178.62.127.177
 ```
 
-When you first start your full node with `tmn start`, you need to give some information.
+When you first start your full node with `taomn start`, you need to give some information.
 
 > **--name:** The name of your full node.
 Your input will be converted to a "slugified" name. 
 Slug format allows all letters and numbers, dashes ("-") and underscores ("_"). 
-Ex: `MyMaStErNode#24 cool` -> `mymasternode24-cool`. 
+Ex: `MyMaStErNode#99 cool` -> `mymasternode99-cool`. 
 You can name it to reflect your identity, company name, etc.  
 >  
 > **--net:** The network your full node will connect to.
-You can choose here to connect it to the TomoChain `mainnet` or `testnet`.  
+You can choose here to connect it to the Tao `mainnet` or `testnet`.  
 >  
-> **--pkey:** The private key of your WALLET1 wallet (non 50k).
-A TomoChain full node uses a wallet address to be uniquely identified and to receive transaction fees.
+> **--pkey:** The private key of your WALLET1 wallet (non 100k).
+A Tao full node uses a wallet address to be uniquely identified and to receive transaction fees.
 Transaction fees are not rewards, and they are usually tiny.
 Important note: we advise for security measures to use a fresh new wallet for your masternode.
 This is not the wallet that will receive the rewards.
-The rewards are sent to the wallet that will make the 50k TOMO initial deposit.
+The rewards are sent to the wallet that will make the 100k TAO initial deposit.
 
 The command is structured like this:
 
 ```shell
-tmn start --name [YOUR_NODE_NAME] --net mainnet --pkey [YOUR_WALLET1_PRIVATE_KEY]
+taomn start --name [YOUR_NODE_NAME] --net mainnet --pkey [YOUR_WALLET1_PRIVATE_KEY]
 ```
 
 We used the following command for our node (copy your own **name** & **private key**):
 
 ```shell
-tmn start --name Atlantis --net mainnet --pkey cf03cb58************
+taomn start --name Atlantis --net mainnet --pkey cf03cb58************
 ```
 
 ********************
 TROUBLESHOOTING
 
-`tmn: command not found`
+`taomn: command not found`
 
 It might happen that your PATH is not set by default to include the default user binary directory. You can add it by adding it to your shell $PATH:
 
@@ -521,18 +521,18 @@ source $HOME/.bashrc
 ## 9. Check sync status
 This section coming soon.
 
-Contents to come: `tmn status`; `tmn inspect`; `top` command; https://stats.tomochain.com/ website; # of blocks command; `tmn update`, `tmn --help`, etc
+Contents to come: `taomn status`; `taomn inspect`; `top` command; https://stats.tao.network/ website; # of blocks command; `taomn update`, `taomn --help`, etc
 <br/>
 
 
 
 ## 10. Jumpstart the chaindata (Optional)
 
-[Full Jumpstart instructions can be found here](https://github.com/tomochain/docs/wiki/Update-stuck-node-or-Jumpstart-chain-sync)
+[Full Jumpstart instructions can be found here](https://github.com/taoblockchain/docs/wiki/Update-stuck-node-or-Jumpstart-chain-sync)
 
 The basic structure has been created, blocks have started synchronizing, and now we want to speed up the process by pulling in the latest chaindata.
 
-> Chaindata is where the entire history of tomo's blockchain records are stored.
+> Chaindata is where the entire history of tao's blockchain records are stored.
 All coin transactions, all smart contracts, all operations.
 This takes up a _lot_ of space.
 To syncrhonize it from decentralized nodes piecemeal-like could take days or weeks.
@@ -544,9 +544,9 @@ Instead, lets download the latest image of the data, and synchronize from there.
 
 ## 11. Apply for Masternode Candidacy
 This section coming soon.
-[For now, see here](https://docs.tomochain.com/get-started/apply-node/)
+[For now, see here](https://docs.tao.network/get-started/apply-node/)
 
-Contents to come: Explain; Assure synced; master.tomo; login; apply
+Contents to come: Explain; Assure synced; master.tao; login; apply
 <br/>
 
 
@@ -554,7 +554,7 @@ Contents to come: Explain; Assure synced; master.tomo; login; apply
 ## 12. Name your Masternode
 This section coming soon.
 
-Contents to come: https://master.tomochain.com/ ; login as 50k wallet; find your MN; edit; enter name; sign data
+Contents to come: https://shifu.tao.network/ ; login as 100k wallet; find your MN; edit; enter name; sign data
 <br/>
 
 
@@ -562,7 +562,7 @@ Contents to come: https://master.tomochain.com/ ; login as 50k wallet; find your
 ## 13. Verify initial rewards
 This section coming soon.
 
-Contents to come: https://master.tomochain.com/ ; https://scan.tomochain.com/ ; explain infra vs stake reward; link to economics
+Contents to come: https://shifu.tao.network/ ; https://scan.tao.network/ ; explain infra vs stake reward; link to economics
 
 
 
@@ -597,17 +597,17 @@ sudo apt update; sudo apt install docker-ce
 sudo usermod -aG docker michael; groups michael
 docker run hello-world
 
-pip3 install --user tmn
-pip3 install -U tmn
-pip3 show tmn
+pip3 install --user taomn
+pip3 install -U taomn
+pip3 show taomn
 
 # Create Wallet Addresses
 
 # logoff SSH and back in to set $PATH variable
-tmn start --name Atlantis --net mainnet --pkey cf03cb58************
-tmn status; tmn inspect; tmn --help
+taomn start --name Atlantis --net mainnet --pkey cf03cb58************
+taomn status; taomn inspect; taomn --help
 
-# Enact Jumpstart: https://github.com/tomochain/docs/wiki/Update-stuck-node-or-Jumpstart-chain-sync
+# Enact Jumpstart: https://github.com/taoblockchain/docs/wiki/Update-stuck-node-or-Jumpstart-chain-sync
 ```
 
 ---

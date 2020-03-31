@@ -1,10 +1,10 @@
-This tutorial shows how to setup a private TomoChain testnet on a local machine.
-The purpose is to help developers familiarise TomoChain's source code and initial setup
-so that one can learn to contribute to the development of TomoChain.
-The tutorial is alo a first step for any developer who wants to customize TomoChain's 
+This tutorial shows how to setup a private Tao testnet on a local machine.
+The purpose is to help developers familiarise Tao's source code and initial setup
+so that one can learn to contribute to the development of Tao.
+The tutorial is alo a first step for any developer who wants to customize Tao's 
 source code to use in a private or consortium environment.
 
-The following will walk you step-by-step to setup a TomoChain private net with three masternodes.
+The following will walk you step-by-step to setup a Tao private net with three masternodes.
 
 ## Install Golang
   - Reference: https://golang.org/doc/install
@@ -15,13 +15,13 @@ set GOROOT=$HOME/usr/local/go
 set GOPATH=$HOME/go
 ```
     
-## Prepare tomo client software
-   - ```cd $GOPATH/src/github.com/ethereum/go-ethereum```
+## Prepare tao client software
+   - ```cd $GOPATH/src/github.com/taoblockchain/tao2```
    - Download source code and build
 
 ```
 git init
-git remote add git@github.com:tomochain/tomochain.git
+git remote add git@github.com:taoblockchain/tao2.git
 git pull origin master
 make all
 ```
@@ -29,46 +29,46 @@ make all
    - Create shortcuts/alias for easier access
    
 ```
-alias tomo=$GOPATH/src/github.com/ethereum/go-ethereum/build/bin/tomo
-alias bootnode=$GOPATH/src/github.com/ethereum/go-ethereum/build/bin/bootnode
-alias puppeth=$GOPATH/src/github.com/ethereum/go-ethereum/build/bin/puppeth
+alias tao=$GOPATH/src/github.com/taoblockchain/tao2/build/bin/tao
+alias bootnode=$GOPATH/src/github.com/taoblockchain/tao2/build/bin/bootnode
+alias puppeth=$GOPATH/src/github.com/taoblockchain/tao2/build/bin/puppeth
 ```   
         
 ## Setup chain data folders `datadir` and corresponding `keystore` folders for 3 masternodes
    
 ```
-mkdir $HOME/tomochain
-mkdir $HOME/tomochain/nodes
-mkdir $HOME/tomochain/nodes/1 $HOME/tomochain/nodes/2 $HOME/tomochain/nodes/3 
-mkdir $HOME/tomochain/keystore/1 $HOME/tomochain/keystore/2 $HOME/tomochain/keystore/3
+mkdir $HOME/taoblockchain
+mkdir $HOME/taoblockchain/nodes
+mkdir $HOME/taoblockchain/nodes/1 $HOME/taoblockchain/nodes/2 $HOME/taoblockchain/nodes/3 
+mkdir $HOME/taoblockchain/keystore/1 $HOME/taoblockchain/keystore/2 $HOME/taoblockchain/keystore/3
 ```
 
 ## Initialize / Import accounts for the masternodes's keystore 
    - Initialize new accounts: If you have existing accounts and prefer importing them, please ignore this step and go to `Import Accounts`
    
 ```
-tomo account new \
+tao account new \
       --password [YOUR_PASSWORD_FILE_TO_LOCK_YOUR_ACCOUNT] \
-      --keystore $HOME/tomochain/keystore/1
+      --keystore $HOME/taoblockchain/keystore/1
 ```
 
 ```
-tomo account new \
+tao account new \
       --password [YOUR_PASSWORD_FILE_TO_LOCK_YOUR_ACCOUNT] \
-      --keystore $HOME/tomochain/keystore/2
+      --keystore $HOME/taoblockchain/keystore/2
 ```
 
 ```
-tomo account new \
+tao account new \
       --password [YOUR_PASSWORD_FILE_TO_LOCK_YOUR_ACCOUNT] \
-      --keystore $HOME/tomochain/keystore/3
+      --keystore $HOME/taoblockchain/keystore/3
 ```
 
    - Import accounts
    
 ```
-tomo  account import [PRIVATE_KEY_FILE_OF_YOUR_ACCOUNT] \
-    --keystore $HOME/tomochain/keystore/1 \
+tao  account import [PRIVATE_KEY_FILE_OF_YOUR_ACCOUNT] \
+    --keystore $HOME/taoblockchain/keystore/1 \
     --password [YOUR_PASSWORD_FILE_TO_LOCK_YOUR_ACCOUNT]
 ```
 
@@ -83,12 +83,12 @@ puppeth
 
    - Set chain name
 ```
-     > localtomo
+     > localtao
 ```
    ![Private chain name](https://user-images.githubusercontent.com/17243442/57121919-bcbbd000-6da4-11e9-8a0e-dea3a15f3fc1.png)
    
    - Enter 2 to configure new genesis
-   - Enter 3 to select `POSV` consensus
+   - Enter 3 to select `DPOS` consensus
    - Set blocktime (default 2 seconds)
    - Set reward of each epoch
    - Set addresses to be initial masternodes
@@ -102,13 +102,13 @@ puppeth
    `suggestedGap = 5`
    - Enter foundation address which you hold private key
    
-   ![POSV configurations](https://user-images.githubusercontent.com/17243442/57122012-2f2cb000-6da5-11e9-8b1e-7fc1c034226a.png)
+   ![DPOS configurations](https://user-images.githubusercontent.com/17243442/57122012-2f2cb000-6da5-11e9-8b1e-7fc1c034226a.png)
    
    - Enter accounts which you control private keys to unlock MultiSig wallet
    
    ![MultiSig wallet setting](https://user-images.githubusercontent.com/17243442/57122031-453a7080-6da5-11e9-92d6-49fba3a4c1ea.png)
    
-   - Enter swap wallet address for fund 55 million TOMO
+   - Enter swap wallet address for fund 55 million TAO
    
    ![Initial funds](https://user-images.githubusercontent.com/17243442/57122062-7024c480-6da5-11e9-98f1-4ce90b2941d6.png)
    
@@ -124,9 +124,9 @@ puppeth
 ## Initialize your private chain with above genesis block
 
 ```
-tomo --datadir $HOME/tomochain/nodes/1 init [PATH/TO/GENESIS_FILE]
-tomo --datadir $HOME/tomochain/nodes/2 init [PATH/TO/GENESIS_FILE]
-tomo --datadir $HOME/tomochain/nodes/3 init [PATH/TO/GENESIS_FILE]
+tao --datadir $HOME/taoblockchain/nodes/1 init [PATH/TO/GENESIS_FILE]
+tao --datadir $HOME/taoblockchain/nodes/2 init [PATH/TO/GENESIS_FILE]
+tao --datadir $HOME/taoblockchain/nodes/3 init [PATH/TO/GENESIS_FILE]
 ```
     
 ## Setup bootnode
@@ -149,9 +149,9 @@ bootnode -nodekey ./bootnode.key
    - Start masternode 1
    
 ```
-tomo  --syncmode "full" \     
-        --datadir $HOME/tomochain/nodes/1 --networkid [YOUR_NETWORK_ID] --port 10303 \
-        --keystore $HOME/tomochain/keystore/1 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
+tao  --syncmode "full" \     
+        --datadir $HOME/taoblockchain/nodes/1 --networkid [YOUR_NETWORK_ID] --port 10303 \
+        --keystore $HOME/taoblockchain/keystore/1 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
         --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 1545 --rpcvhosts "*" \
         --rpcapi "db,eth,net,web3,personal,debug" \
         --gcmode "archive" \
@@ -164,9 +164,9 @@ tomo  --syncmode "full" \
    - Start masternode 2
    
 ```
-tomo  --syncmode "full" \
-            --datadir $HOME/tomochain/nodes/2 --networkid [YOUR_NETWORK_ID] --port 20303 \
-            --keystore $HOME/tomochain/keystore/2 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
+tao  --syncmode "full" \
+            --datadir $HOME/taoblockchain/nodes/2 --networkid [YOUR_NETWORK_ID] --port 20303 \
+            --keystore $HOME/taoblockchain/keystore/2 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
             --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 2545 --rpcvhosts "*" \
             --rpcapi "db,eth,net,web3,personal,debug" \
             --gcmode "archive" \
@@ -179,9 +179,9 @@ tomo  --syncmode "full" \
 
    - Start masternode 3
 ```
-tomo  --syncmode "full" \
-            --datadir $HOME/tomochain/nodes/3 --networkid [YOUR_NETWORK_ID] --port 30303 \
-            --keystore $HOME/tomochain/keystore/3 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
+tao  --syncmode "full" \
+            --datadir $HOME/taoblockchain/nodes/3 --networkid [YOUR_NETWORK_ID] --port 30303 \
+            --keystore $HOME/taoblockchain/keystore/3 --password [YOUR_PASSWORD_FILE_TO_UNLOCK_YOUR_ACCOUNT] \
             --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 3545 --rpcvhosts "*" \
             --rpcapi "db,eth,net,web3,personal,debug" \
             --gcmode "archive" \
@@ -209,12 +209,12 @@ tomo  --syncmode "full" \
 --targetgaslimit: Target gas limit sets the artificial target gas floor for the blocks to mine (default: 4712388)
 --bootnode: bootnode information to help to discover other nodes in the network
 --gcmode: blockchain garbage collection mode ("full", "archive")
---synmode: blockchain sync mode ("fast", "full", or "light". More detail: https://github.com/tomochain/tomochain/blob/master/eth/downloader/modes.go#L24)
+--synmode: blockchain sync mode ("fast", "full", or "light". More detail: https://github.com/taoblockchain/tao2/blob/master/eth/downloader/modes.go#L24)
 ```
    To see all flags usage
    
 ```
-tomo --help
+tao --help
 ```
 
 
@@ -222,7 +222,7 @@ tomo --help
   - Connect ipc
    
 ```
-tomo attach $HOME/tomochain/nodes/1/tomo.ipc
+tao attach $HOME/taoblockchain/nodes/1/tao.ipc
 ```
    
 ```
@@ -234,7 +234,7 @@ eth.getBlock(1)
    - Connect rpc
 
 ```
-tomo attach tomo attach http://localhost:1545
+tao attach tao attach http://localhost:1545
 ```
 
 ```
@@ -248,7 +248,7 @@ eth.getBlock(1)
    ![Console log at checkpoint](https://user-images.githubusercontent.com/17243442/57122084-93e80a80-6da5-11e9-81cf-598693bd2779.png)
 
 ```
-tomo attach http://0.0.0.0:1545
+tao attach http://0.0.0.0:1545
 ```
 
 ```
@@ -259,10 +259,10 @@ eth.getBlock(900)
    - Reset your chain
    
 ```
-rm -rf $HOME/tomochain/nodes/1/tomo $HOME/tomochain/nodes/2/tomo  $HOME/tomochain/nodes/3/tomo
-tomo --datadir $HOME/tomochain/nodes/1 init genesis.json
-tomo --datadir $HOME/tomochain/nodes/2 init genesis.json
-tomo --datadir $HOME/tomochain/nodes/3 init genesis.json
+rm -rf $HOME/taoblockchain/nodes/1/tao $HOME/taoblockchain/nodes/2/tao  $HOME/taoblockchain/nodes/3/tao
+tao --datadir $HOME/taoblockchain/nodes/1 init genesis.json
+tao --datadir $HOME/taoblockchain/nodes/2 init genesis.json
+tao --datadir $HOME/taoblockchain/nodes/3 init genesis.json
 ```
 
 Note: we use the Gnosis Multisig Wallet: https://github.com/gnosis/MultiSigWallet

@@ -8,9 +8,9 @@ deploy:
   provider: pages
   skip_cleanup: true
   github-token: $GH_TOKEN
-  repo: tomochain/docs
+  repo: tao/docs
   target-branch: gh-pages
   local-dir: site
-  fqdn: docs.tomochain.com
+  fqdn: docs.tao.network
   on:
     branch: master

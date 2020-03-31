@@ -1,6 +1,6 @@
 # Use Cases
 
-Partners willing to run applications on top of Tomochain:
+Partners willing to run applications on top of Tao:
 
 - Social Network: [replyblock.com](https://replyblock.com)
 - E-commerce: [binkabi.io](http://binkabi.io)
@@ -12,4 +12,4 @@ Partners willing to run applications on top of Tomochain:
 - Travel Network: [triip.me](https://www.triip.me/)
 - Decentralized Domain Name: [portal.network](https://www.portal.network/)
 
-You can consult a more detailed list of dApps on the main Tomochain [website](https://tomochain.com/dapps/).
+You can consult a more detailed list of dApps on the main Tao [website](https://tao.network/dapps/).

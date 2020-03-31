@@ -1,8 +1,8 @@
 ## Headquarters
 
 ```
-TomoChain Pte. Ltd.
-10 Anson Road #22-15
-International Plaza
-Singapore 079903
+Tao Board of Governors
+10713 Burbank Blvd
+North Hollywood, California 91601
+USA
 ```

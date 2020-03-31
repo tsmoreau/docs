@@ -1,8 +1,8 @@
-# TomoChain Documentation
+# Tao Documentation
 
-[![Join the chat at https://gitter.im/tomochain/docs](https://badges.gitter.im/tomochain/docs.svg)](https://gitter.im/tomochain/docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/taoblockchain/docs](https://badges.gitter.im/taoblockchain/docs.svg)](https://gitter.im/taoblockchain/docs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-TomoChain [documentation](https://docs.tomochain.com).
+Tao [documentation](https://docs.tao.network).
 
 ## Requirements
 
@@ -14,7 +14,7 @@ TomoChain [documentation](https://docs.tomochain.com).
 Clone the project.
 
 ```bash
-git clone https://github.com/tomochain/docs.git
+git clone https://github.com/taoblockchain/docs.git
 ```
 
 Create a virtualenv for this project.

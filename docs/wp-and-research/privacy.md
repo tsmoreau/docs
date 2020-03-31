@@ -1,4 +1,4 @@
-# TomoP - High Performance and Anonymous Transfer Protocol on TomoChain
+# TaoP - High Performance and Anonymous Transfer Protocol on Tao
 
 A tremendous amount of work and investment has been devoted to the development of blockchain technology to solve current 
 problems, i.e. scalability and privacy, with the technology itself as well as to 
@@ -11,36 +11,36 @@ In this regard, blockchain provides transparency to all users,
 which is not always expected by the majority of businesses. A business would 
 like to hide the transaction amount, instead of showing it to everyone.
 
-This paper presents TomoP - a protocol proposed by TomoChain for private transactions on the TomoChain public blockchain.
+This paper presents TaoP - a protocol proposed by Tao for private transactions on the Tao public blockchain.
 The paper describes a protocol that allows creating anonymous transactions that hide 
 the transaction value, sender, and receiver to 
-preserve the financial privacy of holders of TOMO and tokens on TomoChain.
-TomoP is the first ever EVM-compatible private transaction protocol with very fast transaction speed 
+preserve the financial privacy of holders of TAO and tokens on Tao.
+TaoP is the first ever EVM-compatible private transaction protocol with very fast transaction speed 
 that allows anonymizing the transaction sender
 in a transaction without requiring an intermediary.
 
-TomoP solves the following problems:
+TaoP solves the following problems:
 
 * Performance: Most (if not all) current privacy `coins`, i.e. Monero, ZCoin, ZCash, are slow
-because of high block time in the consensus protocol of those public chains. TomoP operates as
-a DApp on TomoChain, which provides transaction confirmation within 2-4 seconds.
+because of high block time in the consensus protocol of those public chains. TaoP operates as
+a DApp on Tao, which provides transaction confirmation within 2-4 seconds.
 
 * Transaction sender anonymity: most EVM smart contract-based private transactions require a 
 [relayer](https://ethresear.ch/t/burn-relay-registry-decentralized-transaction-abstraction-on-layer-2/5820)
 to sign a private transaction to pay the transaction gas that will eventually be refunded.
 This makes the privacy transaction system semi-decentralized. 
-TomoP, on the other hand, uses TomoZ - the protocol to make gasless transactions without
+TaoP, on the other hand, uses TaoZ - the protocol to make gasless transactions without
 requiring a `relayer` between the transaction creator and the blockchain.
 
 * Out-of-gas: Verifying cryptographic proofs in private transactions requires intensive computation, which 
 could cause the out-of-gas problem in EVM environment. 
-To reduce gas consumption and speed up transaction proof verification, TomoP implements a set of 
-precompiled contracts integrated in the core EVM of TomoChain. 
+To reduce gas consumption and speed up transaction proof verification, TaoP implements a set of 
+precompiled contracts integrated in the core EVM of Tao. 
 
-* TomoP allows creating a private token standard to 
-make super fast token-based payment systems and DApps on TomoChain. 
+* TaoP allows creating a private token standard to 
+make super fast token-based payment systems and DApps on Tao. 
 
-TomoP relies on the following techniques:
+TaoP relies on the following techniques:
 
 * Cryptographic privacy building blocks include:
     * Stealth address: This technique is used for obfuscating transaction recipients by generating a new one-time public key
@@ -51,16 +51,16 @@ TomoP relies on the following techniques:
     transaction senders and transaction amounts in a transaction. 
     * Bulletproofs: Zero-knowledge proofs that allow proving an encrypted number is within a range
     without revealing the number itself. 
-    Bulletproofs are used in TomoP transactions to prove that a transaction amount in a private transaction
+    Bulletproofs are used in TaoP transactions to prove that a transaction amount in a private transaction
     is positive in order to prevent double spending.
 
-* TomoZ: TomoZ is the first decentralized gasless transaction protocol on TomoChain. 
-TomoP relies on TomoZ to create a transaction fee vault for private transactions.
-This fee vault is stored in [TomoIssuer](http://issuer.tomochain.com/) contract on TomoChain to
+* TaoZ: TaoZ is the first decentralized gasless transaction protocol on Tao. 
+TaoP relies on TaoZ to create a transaction fee vault for private transactions.
+This fee vault is stored in [TaoIssuer](http://issuer.tao.network/) contract on Tao to
 pay the network fee while the actual private transaction fee is paid internally in the private transaction.
 
 * Precompiled contracts: A set of precompiled contracts for Ring Signature verification and Bulletproof range proof
-is integrated directly into the core EVM of TomoChain. 
+is integrated directly into the core EVM of Tao. 
 This allows any smart contract (i.e. private token contract) to call those precompiled contracts to verify cryptographic proofs.
 
 ## Why privacy matters?
@@ -77,7 +77,7 @@ people to their balances and details about parties involved, amounts and trends.
 Blockchain technology fundamentally relies on distributed system principles and 
 cryptography techniques, especially digital signature algorithms. 
 Elliptic Curve Digital Signature Algorithm (ECDSA) is widely used in 
-most blockchain systems such as Bitcoin, Ethereum, and TomoChain to 
+most blockchain systems such as Bitcoin, Ethereum, and Tao to 
 generate a signature in order to authenticate the sender of a transaction. 
 The most widely used elliptic curve in blockchains is secp256k1. 
 
@@ -112,13 +112,13 @@ individually numbered (or/and countersigned) envelope kept by who wrote the mess
 The envelope's content can't be changed by any means, and the message does not 
 leak any information.
 
-In TomoP, a Pederson commitment C to a number `f` is defined as follows:
+In TaoP, a Pederson commitment C to a number `f` is defined as follows:
 
 ```C = m*G + f*H```
 
 Where `m` is 256-bit number called blinding factor/mask, and `H` is another generator point. 
 
-If we consider f as an account’s balance on TomoChain, the commitment C can be used 
+If we consider f as an account’s balance on Tao, the commitment C can be used 
 for hiding the transaction amount of such account. 
 In other words, `C` is the Pederson encrypted amount of such account.
 
@@ -129,25 +129,25 @@ which has the following nice property: The sum of two Pederson commitments to f1
 
 This is the key application of Pederson commitment to most privacy-focused blockchains.
 
-## TomoP architecture
-TomoP supports both an anonymous TOMO transfer method and a private token standard on TomoChain.
+## TaoP architecture
+TaoP supports both an anonymous TAO transfer method and a private token standard on Tao.
 
-The following figure shows the overview of TomoP that is integrated both at the core and the smart contract
-layer of TomoChain.
+The following figure shows the overview of TaoP that is integrated both at the core and the smart contract
+layer of Tao.
 
-![overviewprivacy](/assets/overviewprivacy.png){#fig:overviewprivacy}*Figure 1: Overview of TomoP*
+![overviewprivacy](/assets/overviewprivacy.png){#fig:overviewprivacy}*Figure 1: Overview of TaoP*
 
 
-Instead of directly sending funds to the recipient, the sender will anonymize their TOMO by making a 
+Instead of directly sending funds to the recipient, the sender will anonymize their TAO by making a 
 transaction to the `Privacy` smart contract. 
 As long as send transactions are made to the privacy contract, 
-the latter allows TOMO holders to send/receiver TOMO to/from others 
+the latter allows TAO holders to send/receiver TAO to/from others 
 without showing the transaction amount within it. 
-TomoP transactions are like Monero transactions but in a smart contract on the very fast blockchain TomoChain.
+TaoP transactions are like Monero transactions but in a smart contract on the very fast blockchain Tao.
 
 Typically, funds flow as follows:
 
-* A user anonymize her TOMO by making a deposit transaction to send TOMO to the 
+* A user anonymize her TAO by making a deposit transaction to send TAO to the 
 privacy smart contract. 
 This transaction is a normal transaction and does not hide the transaction amount.
 This transaction creates a `Note` in the privacy contract. 
@@ -162,17 +162,17 @@ The user uses her own private key to create RingCT and Bulletproofs for
 the privacy contract to verify. 
 Anonymous send obfuscates transaction sender and receiver, and hides transaction amounts.
 
-* The user can decide to de-anonymize her private TOMO by withdrawing all or part of her funds from the 
+* The user can decide to de-anonymize her private TAO by withdrawing all or part of her funds from the 
 privacy contract to the user’s public wallet. 
 The withdrawing amount is visible on the chain but the remaining funds 
 of the user held in the privacy contract is always hidden.
  
-### Transaction fee and TomoZ integration
+### Transaction fee and TaoZ integration
 
-TomoP utilizes TomoZ - the core protocol of TomoChain allowing gasless transactions in a 
+TaoP utilizes TaoZ - the core protocol of Tao allowing gasless transactions in a 
 decentralized way to anonymize `msg.sender` in anonymous send transactions to the privacy smart contract.
-TomoZ integration is very important to TomoP because of the way that it does not require an account to 
-hold TOMO to make a transaction.
+TaoZ integration is very important to TaoP because of the way that it does not require an account to 
+hold TAO to make a transaction.
 
 For example, when `Alice` wants to make an anonymous send transaction to the privacy contract, if `Alice` 
 uses her private key to sign the transaction, every one would know that `Alice` is making a private transaction,
@@ -180,21 +180,21 @@ which would destroy the anonymity property of the protocol.
 
 Having a third-party such as [relayer](https://ethresear.ch/t/burn-relay-registry-decentralized-transaction-abstraction-on-layer-2/5820)
 to sign the transaction and pay the gas fee is promising but centralizing the protocol.
-Integrating with TomoZ allows to create a privacy fee vault that is initially deposited by the issuer/owner of the privacy contract.
+Integrating with TaoZ allows to create a privacy fee vault that is initially deposited by the issuer/owner of the privacy contract.
 
 For every anonymous send transaction, `Alice` uses her private key to create cryptographic proofs: RingCT, Bulletproofs,
-a brand new account/private key without TOMO is used for signing as `msg.sender`.
-The actual network fee will be paid from the privacy vault fee to masternodes through TomoZ protocol.
-On the other hand, to compensate the privacy transaction fee paid for masternodes, `Alice` sends a 0.01 TOMO fee 
+a brand new account/private key without TAO is used for signing as `msg.sender`.
+The actual network fee will be paid from the privacy vault fee to masternodes through TaoZ protocol.
+On the other hand, to compensate the privacy transaction fee paid for masternodes, `Alice` sends a 0.01 TAO fee 
 to the issuer/owner within the smart contract execution of the anonymous transaction.
 The transaction fee flow is as the following figure.
 
-![privacyfee](/assets/privacyfee.png){#fig:privacyfee}*Figure 2: Privacy transaction fee and TomoZ integration*
+![privacyfee](/assets/privacyfee.png){#fig:privacyfee}*Figure 2: Privacy transaction fee and TaoZ integration*
 
 
-### TomoP's privacy address
-TomoP uses a single private key to generate a dual-key system.
-The user private key `s` of the user's TOMO address is called private spend key and `v = SHA256(s)` is 
+### TaoP's privacy address
+TaoP uses a single private key to generate a dual-key system.
+The user private key `s` of the user's TAO address is called private spend key and `v = SHA256(s)` is 
 the private view key of the user.
 As the names imply:
 
@@ -225,7 +225,7 @@ to better understand how it works.
 What confidential transaction does not support is transaction sender anonymity, which is
 supported by Ring Confidential Transaction (RingCT) implemented by Monero.
 RingCT is the combination of [Ring Signature](https://en.wikipedia.org/wiki/Ring_signature) and Confidential Transaction.
-Ring Signature allows to obfuscate transaction sender in an anonymity set, whose size is 12 in TomoP.
+Ring Signature allows to obfuscate transaction sender in an anonymity set, whose size is 12 in TaoP.
 
 
 RingCT, however, requires the support of a zero-knowledge range proof in order to prove
@@ -239,34 +239,34 @@ Bulletproofs is a new non-interactive zero-knowledge proof protocol
 with very short proofs and without a trusted setup; the proof size 
 is only logarithmic in the witness size. 
 
-TomoP uses Bulletproofs range proof to prove the transaction amount commited in Pedersen commitments is positive.
-Both Bulletproofs and RingCT are implemented in our [privacy SDK](https://github.com/tomochain/privacyjs).
+TaoP uses Bulletproofs range proof to prove the transaction amount commited in Pedersen commitments is positive.
+Both Bulletproofs and RingCT are implemented in our [privacy SDK](https://github.com/taoblockchain/privacyjs).
 
 ## Implementation
 
 ### Privacy precompiled contracts
 To reduce the gas consumption of RingCT and Bulletproof verification, we propose two precompiled contracts, 
-`RingCTVerifier` and `BulletproofVerifier`, that are implemented in the core EVM of TomoChain, using Golang.
+`RingCTVerifier` and `BulletproofVerifier`, that are implemented in the core EVM of Tao, using Golang.
 These two precompiled contracts will be called by the privacy contract to verify the confidential transaction and Bulletproof
 range proof, respectively. 
 The current addresses for those precompiled contracts are 0x000000000000000000000000000000000000001e and 0x0000000000000000000000000000000000000028.
 
-### Anonymize TOMO
-Anonymizing TOMO is equal to making a deposit transaction to the privacy contract.
+### Anonymize TAO
+Anonymizing TAO is equal to making a deposit transaction to the privacy contract.
 The deposit transaction creates a new `Note` `n` in the privacy contract that has the following cryptographic elements:
 
 * A transaction public key `P`<sub>tx</sub>
 * A stealth, one-time public key `P`<sub>st</sub>
 * A Pedersen commitment `C` of the deposit amount
 
-A deposit fee of 0.001 TOMO is applied to pay transaction fees for 
+A deposit fee of 0.001 TAO is applied to pay transaction fees for 
 the person who deposits to the privacy transaction fee vault.
 
 Once deposited, the privacy smart contract records that the person that has the private key corresponding to
 the deposit stealth public key has the deposit amount in a note.
 
 ### Anonymous send
-Suppose `Bob` wants to receive `x` TOMO from `Alice` via an anonymous send transaction.
+Suppose `Bob` wants to receive `x` TAO from `Alice` via an anonymous send transaction.
 
 1. `Bob` sends his privacy address to `Alice`
 2. `Alice` derives a stealth one-time public key `Stealth`<sub>b</sub> as follows:
@@ -287,12 +287,12 @@ Suppose `Bob` wants to receive `x` TOMO from `Alice` via an anonymous send trans
 generates a random private key to sign the transaction (to anonymize `msg.sender`), and sends the signed 
 transaction to the privacy smart contract.
 
-The generation of RingCT and Bulletproofs will be posted in details in TomoChain's technical blog later. 
+The generation of RingCT and Bulletproofs will be posted in details in Tao's technical blog later. 
 
-Note that RingCT is generated by taking into account the transaction fee of 0.01 TOMO.
+Note that RingCT is generated by taking into account the transaction fee of 0.01 TAO.
 The algorithm to generate `sig` is similar to the one described in [Monero RingCT](https://lab.getmonero.org/pubs/MRL-0005.pdf).
 
-In Step 6, TomoZ empowers the anonymization of `msg.sender` through the privacy fee vault and the paying of transaction 
+In Step 6, TaoZ empowers the anonymization of `msg.sender` through the privacy fee vault and the paying of transaction 
 fee within the internal execution of the privacy smart contract.
 
 ### Anonymous send transaction verification on smart contracts
@@ -302,18 +302,18 @@ The privacy smart contract basically verifies:
 * The validity of the ring confidential transaction (RingCT) `sig` by calling `RingCTVerifier` precompiled contract.
 * The validity of Bulletproofs `bp` by calling `BulletproofVerifier` precompiled contract.
 
-### Anonymous reception of TOMO
+### Anonymous reception of TAO
 Once the transaction is confirmed, `Bob` needs to scan all newly created `notes` on the privacy smart contract
 to recognize which one belongs to him.
 `Bob` uses his private view key to decode the encrypted transaction amount. 
-A proof-of-concept code for the privacy contract can be found [here](https://github.com/tomochain/privacy-sc).
+A proof-of-concept code for the privacy contract can be found [here](https://github.com/taoblockchain/privacy-sc).
 
 Due to the math complexity of RingCT and Bulletproofs, we omit the construction algorithms for those proofs here
-and will detail them in TomoChain's tech blog.
+and will detail them in Tao's tech blog.
 
 ## Private token standard
-TomoP is designed to support private tokens issued on TomoChain.
-A new private token standard TRC21P will be supportec by extending the TRC21 token standard. 
+TaoP is designed to support private tokens issued on Tao.
+A new private token standard TRC2P will be supportec by extending the TRC2 token standard. 
 
 ## Regulatory compliance
 By using a dual-key-like system, any user could register her/his private view key to an authorized authority.
@@ -321,14 +321,14 @@ The latter will then be able to decode all transactions that involve the user bu
 create an anonymous send transaction.  
 The authorized authority would be the goverment tax agency or any organization that allows to track user transactions
 for legal purposes.
-Even a bank could use TomoP to keep track of their user balance while leaving only authorized users with private
+Even a bank could use TaoP to keep track of their user balance while leaving only authorized users with private
 spend keys to make transactions.
 
 ## References
 
-On-going development Github repositories for TomoP
+On-going development Github repositories for TaoP
 
-1. [https://github.com/tomochain/privacy-sc](https://github.com/tomochain/privacy-sc) - contains privacy and utility contract solidity code
-2. [https://github.com/tomochain/tomop](https://github.com/tomochain/tomop) - contains source code for precompiled contracts
-3. [https://github.com/tomochain/tomowallet-web-testnet](https://github.com/tomochain/tomowallet-web-testnet) - proof-of-concept web wallet
-5. [https://github.com/tomochain/privacyjs](https://github.com/tomochain/privacyjs) - SDK for TomoP to make anonymous transactions
+1. [https://github.com/taoblockchain/privacy-sc](https://github.com/taoblockchain/privacy-sc) - contains privacy and utility contract solidity code
+2. [https://github.com/taoblockchain/taop](https://github.com/taoblockchain/taop) - contains source code for precompiled contracts
+3. [https://github.com/taoblockchain/taowallet-web-testnet](https://github.com/taoblockchain/taowallet-web-testnet) - proof-of-concept web wallet
+5. [https://github.com/taoblockchain/privacyjs](https://github.com/taoblockchain/privacyjs) - SDK for TaoP to make anonymous transactions

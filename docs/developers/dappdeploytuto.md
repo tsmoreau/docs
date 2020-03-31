@@ -1,2 +1,2 @@
-For developers who are interested in building and deploying DApps on TomoChain, please 
-refer to [this article](https://medium.com/tomochain/how-to-build-a-dapp-on-tomochain-85532a1192e7) for a detailed guideline.
+For developers who are interested in building and deploying DApps on Tao, please 
+refer to [this article](https://medium.com/taoblockchain/how-to-build-a-dapp-on-tao-85532a1192e7) for a detailed guideline.

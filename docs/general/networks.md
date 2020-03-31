@@ -1,15 +1,15 @@
 ## Mainnet
 
-TomoChain, a independent public blockchain, the most efficient platform for the token economy
+Tao, a independent public blockchain, the most efficient platform for the music economy
 
 ### Specifications
 
-- Chain id: `88`
-- RPC endpoint: `https://rpc.tomochain.com`
-- Websocket endpoint: `wss://ws.tomochain.com`
-- Metrics endpoint: `https://metrics.tomochain.com`
-- HD derivation path: `m/44'/889'/0'/0/`
-- Consensus: POSV
+- Chain id: `64`
+- RPC endpoint: `https://rpc.tao.network`
+- Websocket endpoint: `wss://ws.tao.network`
+- Metrics endpoint: `https://metrics.tao.network`
+- HD derivation path: `m/44'/649'/0'/0/`
+- Consensus: DPOS
 - Block finality: `>75%`
 - Consensus nodes: up to 150 (masternodes)
 - Genesis block date: `December 14th, 2018`
@@ -19,9 +19,9 @@ TomoChain, a independent public blockchain, the most efficient platform for the 
 
 ### Usefull links
 
-- [Status page](https://stats.tomochain.com)
-- [TomoScan](https://scan.tomochain.com) (Block explorer)
-- [TomoMaster](https://master.tomochain.com) (Governance dApp)
+- [Status page](https://stats.tao.network)
+- [TaoScan](https://scan.tao.network) (Block explorer)
+- [Shifu](https://shifu.tao.network) (Governance dApp)
 
 ### Bootnodes
 
@@ -35,7 +35,7 @@ enode://c8f2f0643527d4efffb8cb10ef9b6da4310c5ac9f2e988a7f85363e81d42f1793f64a9aa
 
 `getty-site-pablo-auger-room-sos-blair-shin-whiz-delhi`
 
-Host: stats.tomochain.com:443
+Host: stats.tao.network:443
 
 ## Testnet
 
@@ -44,11 +44,11 @@ The Testnet network is meant to be a public demo of our products and a way for u
 ### Specifications
 
 - Chain id: `89`
-- RPC endpoint: `https://rpc.testnet.tomochain.com`
-- Websocket endpoint:  `wss://ws.testnet.tomochain.com`
-- Metrics endpoint: `https://metrics.testnet.tomochain.com`
+- RPC endpoint: `https://rpc.testnet.tao.network`
+- Websocket endpoint:  `wss://ws.testnet.tao.network`
+- Metrics endpoint: `https://metrics.testnet.tao.network`
 - HD derivation path: `m/44'/889'/0'/0/`
-- Consensus: POSV
+- Consensus: DPOS
 - Block finality: `>75%`
 - Consensus nodes: up to 150 (masternodes)
 - Smart contract creation fee: gas price 10000 Gwei, gas limit >= 1000000
@@ -56,11 +56,11 @@ The Testnet network is meant to be a public demo of our products and a way for u
 
 ### Usefull links
 
-- [Status page](https://stats.testnet.tomochain.com)
-- [TomoScan](https://scan.testnet.tomochain.com) (Block explorer)
-- [TomoMaster](https://master.testnet.tomochain.com) (Governance dApp)
-- [TomoWallet](https://wallet.testnet.tomochain.com) (Wallet dApp)
-- [Faucet](https://faucet.testnet.tomochain.com) (Free testnet TOMO)
+- [Status page](https://stats.testnet.tao.network)
+- [TaoScan](https://scan.testnet.tao.network) (Block explorer)
+- [Shifu](https://master.testnet.tao.network) (Governance dApp)
+- [TaoWallet](https://wallet.testnet.tao.network) (Wallet dApp)
+- [Faucet](https://faucet.testnet.tao.network) (Free testnet TAO)
 
 ### For developers
 
@@ -83,4 +83,4 @@ enode://cf2d05f71f143d85dce45dae6f74fae0ba56fc5ea1d1c548a095e29a5becb3a1fb93eb33
 
 `anna-coal-flee-carrie-zip-hhhh-tarry-laue-felon-rhine`
 
-Host: wss://stats.testnet.tomochain.com:443
+Host: wss://stats.testnet.tao.network:443

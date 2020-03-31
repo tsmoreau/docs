@@ -1,30 +1,24 @@
-# TomoChain Proposal for Decentralized Applications-Oriented Proof-of-Stake Sharding Architecture
+# Tao Proposal for Decentralized Applications-Oriented Proof-of-Stake Sharding Architecture
 
 ## Preface
 
-### TomoChain's vision and mission
+### Tao's vision and mission
 
-Our mission is to be a leading force in building the Internet of Value, and its infrastructure. 
-We are working to create an alternative, scalable financial system which is more secure, transparent, efficient, inclusive and equitable for everyone.
+As the Tao Network approaches its fourth year of consistent, flawless operation it has become clear that the industry, consumers, and markets have become more sophisticated, the codebase has not and a major technological overhaul is required. The vast experience we have gained serving the interests of the music industry have crystalized the technological requirements of a cryptocurrency which may truly begin to disrupt the power structures which dominate the landscape.  A platform which would enable a “DeFi for music” brings with it not only a set of technological prerequisites, but consensus must remain true to the ethics and ideals of the music industry we have come to serve.  It is towards these noble ends that we are creating the means to manifest that future: Tao2.
 
-TomoChain is an innovative solution to the scalability problem with the Ethereum blockchain, and other current blockchain platforms. 
-TomoChain relies on a system of 150 Masternodes with Proof of Stake Voting (PoSV) consensus that can support near-zero fee, and 2-second transaction confirmation time. 
-Security, stability and chain finality are guaranteed via novel techniques such as double validation, staking via smart-contracts and "true" randomization processes. 
-
-TomoChain supports all EVM-compatible smart-contracts, protocols, and atomic cross-chain token transfers. 
-New scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and incorporated into TomoChain's Masternode architecture which will be an ideal scalable smart-contract public blockchain for decentralized apps, token issuances and token integrations for small and big businesses.
+The blockchain industry and the infrastructure of the Internet of Value are being built rapidly around the globe, and to many the atmosphere is eerily similar to the building of the Internet in the late ‘90s, with pioneers and dreamers coming together to build a new future. **Tao** is the first blockchain platform which has dedicated its focus to leveraging the latest of blockchain technologies towards a more democratized, egalitarian future for the music economy.  This upgrade shall acheive this vision through seamlessly merging an ecosystem of applications with cryptographic tokens used by millions of mainstream users with a unique blockchain infrastructure architecture allowing for a fast, secure, frictionless payment and trusted store of value.
 
 ### Scope
 
-This document describes TomoChain’s initial proposal for decentralized applications-oriented Proof-of-Stake Sharding Architecture. 
+This document describes Tao’s initial proposal for decentralized applications-oriented Proof-of-Stake Sharding Architecture. 
 This preliminary draft is not our final design specification and it is subject to change. Comments are welcomed and appreciated.
 
 ## Abstract and Keywords
 
 ### Abstract
-This paper proposes a sharding architecture solution for the TomoChain public blockchain infrastructure.
-Besides the aims at significantly improving the transaction processing performance in the current TomoChain design with the Proof-of-Stake Voting (PoSV) consensus, the presented sharding is designed in order to support decentralized applications’ performance. 
-The solution uses PoSV for intra-shard consensus because PoSV provides two-second block-time and fast confirmation time. 
+This paper proposes a sharding architecture solution for the Tao public blockchain infrastructure.
+Besides the aims at significantly improving the transaction processing performance in the current Tao design with the Proof-of-Stake Voting (DPOS) consensus, the presented sharding is designed in order to support decentralized applications’ performance. 
+The solution uses DPOS for intra-shard consensus because DPOS provides two-second block-time and fast confirmation time. 
 The paper identifies and solves cross-shard transactions for smart contract message calls chain and data availability problem in shard reshuffling. 
 Specifically, we propose two cross-shard smart contract transaction schemes combined with a new smart contract deployment strategy that places dependent smart contracts onto the same shard. 
 Moreover, we also address the data availability problem in state sharding when shard reshuffling takes place. 
@@ -32,7 +26,7 @@ In addition, to be able to provide security and safety for shards, we provide an
 Masternodes of a shard that create a fraudulent block will be detected and penalized by losing all of their deposits to the node that detects the invalidity of the block. 
 
 ### Keywords
-Sharding, Blockchain, Smart contract, TomoChain, cross-shard transactions, randomization, data availability,security, PoSV, consensus.
+Sharding, Blockchain, Smart contract, Tao, cross-shard transactions, randomization, data availability,security, DPOS, consensus.
 
 ## Introduction
 
@@ -79,7 +73,7 @@ OmniLedger [9] using the Unspent Transaction Output (UTXO) provides atomic cross
 A common missing feature of these aforementioned approaches is the lack of smart contract support. 
 If two transactions from the senders in different shards, which execute the same smart contract, would cause concurrent conflict updates in the different shards to the state of the same smart contract.  
 
-In this paper, we propose a sharding architecture for TomoChain but can be applied to any Proof-of-Stake-based blockchain systems to address the aforementioned issues. 
+In this paper, we propose a sharding architecture for Tao but can be applied to any Proof-of-Stake-based blockchain systems to address the aforementioned issues. 
 Furthermore, to be able to provide security and safety for shards, we provide an incentive-driven mutual verification game that aims at offering fast transaction confirmation time and fast detection of a malicious behavior that creates fraudulent blocks. 
 Masternodes of a shard that create a fraudulent block will be detected and penalized by losing all of their deposits to the node that detects the invalidity of the block. 
 
@@ -93,11 +87,11 @@ Finally, we conclude the paper and show some perspectives in Section VI.
 ## Sharding Architecture
 
 This section describes the sharding architecture and the used consensus protocol. 
-We assume readers of this paper have basic understanding of our Proof-of-Stake Voting (PoSV) consensus protocol previously released and presented in [10]. 
-However, to better describe the sharding architecture, we summarize some important information about TomoChain’s PoSV.
+We assume readers of this paper have basic understanding of our Proof-of-Stake Voting (DPOS) consensus protocol previously released and presented in [10]. 
+However, to better describe the sharding architecture, we summarize some important information about Tao’s DPOS.
 
-Specifically, TomoChain features a voting-based system to elect 150 Masternodes that are responsible for creating, verifying and finalizing the blocks created within a period, called epoch, which lasts for 900 of two-second block-times. 
-Each coin-holder must deposit at least 50 000 TOMO to a Voting smart contract and must satisfy a set of infrastructure requirements. 
+Specifically, Tao features a voting-based system to elect 150 Masternodes that are responsible for creating, verifying and finalizing the blocks created within a period, called epoch, which lasts for 900 of two-second block-times. 
+Each coin-holder must deposit at least 50 000 TAO to a Voting smart contract and must satisfy a set of infrastructure requirements. 
 The set of Masternodes is dynamically selected through votes made by coin-holders that send their tokens to the Voting smart contract.
 
 ### Sharding architecture overview
@@ -122,15 +116,15 @@ There is also a root chain that interacts with shard chains.
 The root chain is used for securing the transactions in the shard chains. 
 The root chain does not store details of transactions assigned to shards, but block hashes and the smart contracts used for voting and block finalization. 
 
-TomoChain features a Voting smart contract that is for masternode candidates and coin-holders to deposit and vote for masternodes, respectively. 
+Tao features a Voting smart contract that is for masternode candidates and coin-holders to deposit and vote for masternodes, respectively. 
 In the sharding architecture, this smart contract is deployed on the root chain. 
-Coin-holders interact with the Voting smart contract in the current TomoChain as they interact with the root chain in the sharding architecture. 
+Coin-holders interact with the Voting smart contract in the current Tao as they interact with the root chain in the sharding architecture. 
 Every vote and deposit are recorded in the root chain. 
 
 The blocks in the root chain are created and verified by a larger number of masternodes than shard chains’ for securing the whole system (see Consensus protocol for more detailed discussion). 
-Ideally, all masternodes are responsible for the root chain, just as they are maintaining TomoChain in PoSV. 
+Ideally, all masternodes are responsible for the root chain, just as they are maintaining Tao in DPOS. 
 An interesting point is that the set of masternodes for the root chain does not need to do computation for transactions of specific shards, but only for creating blocks containing transactions to the consensus smart contracts (see [11] for detailed discussion). 
-That means, the computation throughput is much smaller than that of the current PoSV because most of transactions happen in the shard chains. 
+That means, the computation throughput is much smaller than that of the current DPOS because most of transactions happen in the shard chains. 
 All masternodes will be creating and verifying blocks in the root chain and a shard chain, but there is no slot of two-second within which a masternode must create blocks for both the root chain and a shard chain. 
 This is because it is very hard for a masternode to create two blocks within 2s.
 
@@ -138,7 +132,7 @@ It is worth noting that, in order for attackers to create another longer shard c
 
 ### Shard assignment through randomization sampling
 
-As a reminder, masternodes in TomoChain in an epoch is selected at the end of the previous epoch and there is also a randomization process during the previous epoch in order to select block verifiers for double validation. 
+As a reminder, masternodes in Tao in an epoch is selected at the end of the previous epoch and there is also a randomization process during the previous epoch in order to select block verifiers for double validation. 
 The addresses of the set of masternodes for next epoch is recorded in the Voting smart contract in a decreasing order of total votes for them. 
 Each masternode is identified by its deposit wallet address. 
 The goal of the shard assignment is to divide the address-identified N masternodes into subsets of masternodes, each of which process a disjoint set of transactions. 
@@ -147,7 +141,7 @@ To do that, an additional randomization process is executed during the previous 
 ![shardingarchitecture](/assets/shardingarchitecture.jpg){#fig:shardingarchitecture}*Figure 1: The proposed sharding architecture solution*
 
 The shard assignment is realized through randomization sampling that executes a pseudo random number generator function with a random seed agreed between the masternodes. 
-We utilize the decentralized randomization algorithm that was previously introduced in our TomoChain Proof-of-Stake Voting consensus. 
+We utilize the decentralized randomization algorithm that was previously introduced in our Tao Proof-of-Stake Voting consensus. 
 
 The shard assignment has the following steps:
 
@@ -158,11 +152,11 @@ The N numbers are used in a permutation algorithm for sampling S sets of c maste
 
 Figure 1 shows an example of the result of the decentralized randomization sampling process. 
 The shards are communicated with each other through a cross-shard communication scheme, which is presented in the next section. 
-Each shard sends their created blocks, block hashes and block signatures to the root chain that stores them in the TomoChain block signer smart contract (see Section Consensus protocol for more information).
+Each shard sends their created blocks, block hashes and block signatures to the root chain that stores them in the Tao block signer smart contract (see Section Consensus protocol for more information).
 
 ### Consensus protocol
 
-In PoSV, there are currently two consensus smart contracts deployed onto TomoChain:
+In DPOS, there are currently two consensus smart contracts deployed onto Tao:
 
 -   Voting smart contract: This contract allows coin-holders to deposit (to become a masternode candidate), to vote for masternodes, to resign from the candidates list, to un-vote for masternodes, and to withdraw voted and deposited tokens.
 
@@ -171,14 +165,14 @@ In PoSV, there are currently two consensus smart contracts deployed onto TomoCha
 In the sharding architecture, these two smart contracts are deployed onto the root chain. 
 Since the latter is verified by many masternodes, the smart contracts are secured. 
 
-Proof-of-Stake Voting (PoSV) consensus with double validation and randomization is run among the set of masternodes of a shard. 
-As a reminder, PoSV provides fast block-time and confirmation time, and a double validation technique for security enhancement.
+Proof-of-Stake Voting (DPOS) consensus with double validation and randomization is run among the set of masternodes of a shard. 
+As a reminder, DPOS provides fast block-time and confirmation time, and a double validation technique for security enhancement.
 
-A block in PoSV is verified by both block creator, which creates the block, and block verifier, which verifies the block before adding it to the blockchain (see [10] for more information about block creator and block verifier in double validation). 
+A block in DPOS is verified by both block creator, which creates the block, and block verifier, which verifies the block before adding it to the blockchain (see [10] for more information about block creator and block verifier in double validation). 
 Other masternodes will then check whether the block verifier signs off on the block. 
 Each masternode verifies a block by sending its signature for the block to the block signer smart contract on the root chain. 
 A block in a shard is confirmed if ¾ masternodes of that shard verifies and signs it off. 
-The confirmation time for intra-shard transactions can be almost instant, just as what is provided by PoSV without sharding.
+The confirmation time for intra-shard transactions can be almost instant, just as what is provided by DPOS without sharding.
 
 The root chain does not need to do re-computation for verifying blocks created by shard chains. 
 The root chain is secure since it is maintained by all masternodes in the network. 
@@ -206,8 +200,8 @@ The Proof-of-Acceptance consists of the transaction, the Merkle proof of the tra
 -   Commitment at receiving shard: The leader of the receiver shard sends the Proof-of-Acceptance for the transaction at the lock phase to the receiver shard. 
 This latter processes the proof as a transaction which might increase the balance of the receiver. 
 An issue of this commitment phase is that the malicious masternodes in the receiver shard might ignore the commit transaction, thus leaving the whole transaction stuck (because the sender’s balance is decreased while the receiver’s balance is not increased). 
-However, because masternodes take turns to create blocks in a round-robin manner following the PoSV consensus, the proof will eventually be added to a block created by an honest masternode, even though one or several malicious masternodes might ignore the proof transaction. 
-This liveness property is discussed in details in our previous technical paper for PoSV consensus.
+However, because masternodes take turns to create blocks in a round-robin manner following the DPOS consensus, the proof will eventually be added to a block created by an honest masternode, even though one or several malicious masternodes might ignore the proof transaction. 
+This liveness property is discussed in details in our previous technical paper for DPOS consensus.
 
 Figure 2 shows an illustrative example of a smart contract call cross-shard transaction. 
 One of the complications of this transaction scheme is how to refund the left gas after the execution of the smart contract at the receiver shard completes. 
@@ -224,11 +218,11 @@ However, Lock-Commit scheme for simple balance transfer does not involve the com
 This is because the Lock-Commit scheme for cross-shard simple balance transfer will consume a fixed amount gas (the gas for two balance transfers or 2300*2 gas).
 
 -   Use the controlled external account to interact with all smart contracts in the receiver shard. 
-All transactions started by this external account within the receiver shard will then be confirmed almost instantly as provided by the PoSV consensus.
+All transactions started by this external account within the receiver shard will then be confirmed almost instantly as provided by the DPOS consensus.
 
-While this transfer-first cross-shard transaction scheme helps maintain the fast transaction confirmation property of PoSV, it raises another issue: a user must manage as many accounts as the number of shards in the system in order to be able to instantly interact with all smart contracts and decentralized applications deployed on all shards. 
-In order to alleviate this complicated account management issue, we intend to integrate an account management layer into our TOMO wallet. 
-This layer is to help users manage their accounts in different shards as a single account in the current TomoChain design. 
+While this transfer-first cross-shard transaction scheme helps maintain the fast transaction confirmation property of DPOS, it raises another issue: a user must manage as many accounts as the number of shards in the system in order to be able to instantly interact with all smart contracts and decentralized applications deployed on all shards. 
+In order to alleviate this complicated account management issue, we intend to integrate an account management layer into our TAO wallet. 
+This layer is to help users manage their accounts in different shards as a single account in the current Tao design. 
 It brings transparency to users as they are interacting with a one-shard system. When a user wants to make a transaction, the wallet does as follows:
 
 -   The account management layer specifies the target shard ID, based on the address of the receiver of the transaction.
@@ -243,7 +237,7 @@ It brings transparency to users as they are interacting with a one-shard system.
 *
 
 One issue with this cross-shard transaction scheme is that the transaction fee would be higher than the non-sharding blockchain system since any cross-shard transaction must pay an additional fee at the sender shard of the transaction for the Lock at sending shard phase. 
-However, the issue can be alleviated if the scheme is implemented along with a near-zero fee transaction system such as TomoChain.
+However, the issue can be alleviated if the scheme is implemented along with a near-zero fee transaction system such as Tao.
 
 ### Smart contract message calls chain
 
@@ -349,7 +343,7 @@ Plasma provides an “exit” mechanism that aims at resolving the data availabi
 Specifically, in Plasma, when a participant cannot access block data of a Plasma chain, the participant can move her asset/token from the Plasma chain to the root chain (or the parent Plasma chain) by executing the “exit” mechanism. 
 The participant then needs to wait for an amount of time, i.e. 1 week, in order for other participants to submit a fraud proof if the exit execution is falsified. 
 
-In order to maintain fast confirmation time as in the current TomoChain PoSV design and to have the shards’ liveness, our approach is driven by an incentive and mutual verification game. 
+In order to maintain fast confirmation time as in the current Tao DPOS design and to have the shards’ liveness, our approach is driven by an incentive and mutual verification game. 
 The latter aims at providing both fast confirmation and detection of Byzantiness of a block.
 
 By utilizing the very strong incentivizing-penalizing incentive-driven mutual verification game, challengers are strongly encouraged to work hard in order to keep the system safe and secure and shard masternodes are discouraged to act maliciously.
@@ -389,7 +383,7 @@ On the other hand, the second strategy can save more storage and network bandwid
 The paper has presented a new solution to sharding architecture for public blockchains. 
 It aims at being transparent to users and significantly improving the transaction processing performance, while still maintaining basic security requirements of the system. 
 The paper uniquely identified and solved cross-shard transactions for smart contract call chaining and data availability problem in shard reshuffling. 
-The proposed solution uses the Proof-of-Stake Voting (PoSV) efficient consensus protocol proposed by Tomochain for intra-shard consensus. 
+The proposed solution uses the Proof-of-Stake Voting (DPOS) efficient consensus protocol proposed by Tao for intra-shard consensus. 
 Specifically, we relied on our decentralized randomization algorithm for randomized shard assignment of masternodes and proposed two cross-shard smart contract transaction schemes combined with a new smart contract deployment strategy. 
 The latter places dependent smart contracts onto the same shard, which eliminates smart contract message calls chain problem involving multiple shards. 
 In order to ensure safety and security of shards, we proposed an incentive-driven mutual verification game.
@@ -397,7 +391,7 @@ In this latter, masternodes that create and/or verify an invalid block are penal
 Moreover, we also discuss the data availability problem in state sharding when shard reshuffling takes place and propose several possible solutions.
 
 We are currently analyzing rigorously the safety and security properties of the proposed architecture to show its soundness. 
-In future, once the analysis will have been done, we will implement the proposed architecture on top of the TomoChain blockchain.
+In future, once the analysis will have been done, we will implement the proposed architecture on top of the Tao blockchain.
 
 ## References
 
@@ -419,7 +413,7 @@ In future, once the analysis will have been done, we will implement the proposed
 
 [9]   	E. Kokoris-Kogias, P. Jovanovic, L. Gasser, N. Gailly, and E. Syta, “OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding,” IEEE Symposium on Security & Privacy, 2018.
 
-[10] 	Tomochain R&D Team, “Tomochain: Masternodes Design Technical White Paper Version 1.0,” Technical White Paper, 2018.
+[10] 	Tao R&D Team, “Tao: Masternodes Design Technical White Paper Version 1.0,” Technical White Paper, 2018.
 
 [11] 	J. Teutsch and C. Reitwießner, “A scalable veriﬁcation solution for blockchains,” p. 50, 2017.
 

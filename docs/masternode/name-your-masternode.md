@@ -1,5 +1,5 @@
 # Name Your Masternode
-Masternodes and proposed-masternodes (not enough votes yet) can be given alternate names and info on https://master.tomochain.com/ .
+Masternodes and proposed-masternodes (not enough votes yet) can be given alternate names and info on https://shifu.tao.network/ .
 
 To alter this information, you will need to login to master with your WALLET2 Deposit Wallet (50k), find your masternode, edit the text, and then sign the change with your wallet.
 By signing the changes, you are cryptographically proving that this is actually the owner who wants to change the info.
@@ -7,12 +7,12 @@ By signing the changes, you are cryptographically proving that this is actually 
 0. Know which wallet and wallet-software you used for the 50k
 
     For example, maybe you use your Ledger Hardware Wallet with Metamask.
-    Or maybe you used a mobile wallet like Tomochains Tomo Wallet or Binances Trust Wallet.
+    Or maybe you used a mobile wallet like Tao Wallet or Binances Trust Wallet.
 
-1. Head to https://master.tomochain.com/
+1. Head to https://shifu.tao.network/
 
     If you originally setup your masternode with a Ledger or MyEtherWallet or MetaMask, you do this on a computer browser.
-    If you originally used a mobile wallet such as Tomochains Tomo Wallet or Binances Trust Wallet app, you will visit this webpage inside those apps.
+    If you originally used a mobile wallet such as Tao Wallet or Binances Trust Wallet app, you will visit this webpage inside those apps.
 
 2. Login with your wallet
 
@@ -57,7 +57,7 @@ By signing the changes, you are cryptographically proving that this is actually 
     
     `Candidate information updated successfully` will temporarily popup if successful.
     
-7. Check main page of https://master.tomochain.com/ ! Done!
+7. Check main page of https://shifu.tao.network/ ! Done!
 
     Changes you made should now be visible here.
-    Note that the name does **not** change on the stats.tomochain.com website.
+    Note that the name does **not** change on the stats.tao.network website.

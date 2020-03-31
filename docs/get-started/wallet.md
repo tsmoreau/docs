@@ -1,16 +1,16 @@
-## TomoWallet
+## TaoWallet
 
-Download TomoWallet from [Apple Store](https://itunes.apple.com/vn/app/tomo-wallet/id1436476145) or [Google Play](https://play.google.com/store/apps/details?id=com.tomochain.wallet).
-You can create a new wallet, import an existing wallet, vote for Masternodes and transfer/receive TOMO back and forth.
+Download TaoWallet from [Apple Store](https://itunes.apple.com/vn/app/tao-wallet/id1436476145) or [Google Play](https://play.google.com/store/apps/details?id=com.tao.wallet).
+You can create a new wallet, import an existing wallet, vote for Masternodes and transfer/receive TAO back and forth.
 
-*Note: Under Settings you can Choose Network: TomoChain (Mainnet) or TomoChain DevNet (Testnet).*
+*Note: Under Settings you can Choose Network: Tao (Mainnet) or Tao DevNet (Testnet).*
 
-![tomowallet1](/assets/tomowallet1.jpg)
+![taowallet1](/assets/taowallet1.jpg)
 
 ## Metamask
 
-TomoChain will guide you how to connect MetaMask to TomoChain Mainnet.
-It is an essential step to study an overview of TomoChain features in term of meeting the crypto trading needs on system.
+Tao will guide you how to connect MetaMask to Tao Mainnet.
+It is an essential step to study an overview of Tao features in term of meeting the crypto trading needs on system.
 
 Get started! You first need to install [MetaMask Extension](https://metamask.io/) on Chrome or Brave browsers.
 Once you agree to the Metamask Terms of Use and create an account successfully, follow instructions:
@@ -22,10 +22,10 @@ Once you agree to the Metamask Terms of Use and create an account successfully, 
 **Step 2:** When Settings screen pops up, scroll down to `New Network` and click `Show Advanced Options`.
 Enter the following information, then Save:
 
-- New RPC URL: `https://rpc.tomochain.com`
+- New RPC URL: `https://rpc.tao.network`
 - ChainID: `88`
-- Symbol: `TOMO`
-- Nickname: `TomoChain Mainnet`
+- Symbol: `TAO`
+- Nickname: `Tao Mainnet`
 
 ![metamask2](/assets/metamask2.jpg)
 
@@ -33,22 +33,22 @@ Set `Privacy Mode` On, if you want to connect Metamask with your hardware wallet
 
 ![metamask3](/assets/metamask3.jpg)
 
-**Step 3:** You are successfully connected to TomoChain Mainnet.
+**Step 3:** You are successfully connected to Tao Mainnet.
 
 ## MyEtherWallet
 
-TomoChain is now supported by [MyEtherWallet](https://www.myetherwallet.com/). 
-In order to connect your MyEtherWallet wallet to TomoChain, all you need to do is to choose `Network TOMO` in the dropdown network list at top right corner.
+Tao is now supported by [MyEtherWallet](https://www.myetherwallet.com/). 
+In order to connect your MyEtherWallet wallet to Tao, all you need to do is to choose `Network TAO` in the dropdown network list at top right corner.
 
-![mewtomo](/assets/mewtomo.jpg) 
+![mewtao](/assets/mewtao.jpg) 
 
 ## TrustWallet
 
-**Step 1:** Open [Trust Wallet](https://trustwallet.com/assets/tomochain) then go to Settings > Wallets > and tap on the plus sign in the top right corner to import a new wallet.
+**Step 1:** Open [Trust Wallet](https://trustwallet.com/assets/taoblockchain) then go to Settings > Wallets > and tap on the plus sign in the top right corner to import a new wallet.
 
 ![trustwallet1](/assets/trustwallet1.jpg)
 
-**Step 2:** Tap on `Import Wallet` and select TomoChain on the next screen
+**Step 2:** Tap on `Import Wallet` and select Tao on the next screen
 
 ![trustwallet2](/assets/trustwallet2.jpg)
 

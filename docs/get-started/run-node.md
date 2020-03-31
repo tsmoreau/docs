@@ -1,12 +1,12 @@
 This tutorial shows you how to run a full node and meet the requirements 
-to apply to becoming a masternode candidate on TomoMaster, 
-you have to run the [TomoChain client](https://github.com/tomochain/tomochain), 
-which is our TomoChain implementation written in _Go_.
+to apply to becoming a masternode candidate on Shifu, 
+you have to run the [Tao client](https://github.com/taoblockchain/taoblockchain), 
+which is our Tao implementation written in _Go_.
 
 ## General hardware notice
 
-The TomoChain team has extensively tested performances and 
-come up with those minimal requirements for any TomoChain masternode host.
+The Tao team has extensively tested performances and 
+come up with those minimal requirements for any Tao masternode host.
 
 **Testnet**
 
@@ -32,12 +32,12 @@ communication with other nodes, `8545` tcp for RPC api and `8546` tcp for websoc
 You may need to edit your firewall configuration accordingly.
 
 If you have other production grade environment than cloud provider at your displosal, 
-please tell us more about on our [Gitter](https://gitter.im/tomochain).
+please tell us more about on our [Gitter](https://gitter.im/taoblockchain).
 
 ## tmn
 
-We made a simple command line interface called [tmn](https://github.com/tomochain/masternode) 
-to easily and quickly start a TomoChain full node.
+We made a simple command line interface called [tmn](https://github.com/taoblockchain/masternode) 
+to easily and quickly start a Tao full node.
 It takes care of starting the necessary docker containers with the proper settings for you.
 It will really suit you if you don't already have a big infrastructure running.
 Spin up a machine in your favorite cloud and get your full node running in a few minutes!
@@ -75,14 +75,14 @@ Slug format authorize all letters and numbers, dashes ("-") and underscores ("\_
 You can name it to reflect your identity, company name, etc.
 
 `--net`: The network your full node will connect to.
-You can choose here to connect it to the TomoChain Testnet or Mainnet (once launched).
+You can choose here to connect it to the Tao Testnet or Mainnet (once launched).
 
 `--pkey`: The private key of the account that your full node will use.
-A TomoChain full node uses an account to be uniquely identified and to receive transaction fee.
+A Tao full node uses an account to be uniquely identified and to receive transaction fee.
 
 **Important note:** we advise for security measures to use a fresh new account for your masternode.
 This is not the account who will receive the rewards.
-The rewards are sent to the account who will make the 50k TOMO initial deposit.
+The rewards are sent to the account who will make the 50k TAO initial deposit.
 
 It could look like this:
 
@@ -92,8 +92,8 @@ tmn start --name [YOUR_NODE_NAME] \
     --pkey [YOUR_COINBASE_PRIVATE_KEY]
 ```
 
-Once started, you should see your node on the [testnet stats page](https://stats.testnet.tomochain.com)
-or the [mainnet stats page](https://stats.tomochain.com), 
+Once started, you should see your node on the [testnet stats page](https://stats.testnet.tao.network)
+or the [mainnet stats page](https://stats.tao.network), 
 depending on which net you are connecting to!
 
 Note: it can take up to one hour or more (depending on the 

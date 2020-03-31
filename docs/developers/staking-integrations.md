@@ -1,9 +1,9 @@
-Masternodes and stakers is stored and governared in [TomoChain Validator smart contract](https://scan.tomochain.com/address/0x0000000000000000000000000000000000000088):
+Masternodes and stakers is stored and governared in [Tao Validator smart contract](https://scan.tao.network/address/0x0000000000000000000000000000000000000088):
 
-- Smart Contract Code: [TomoChain Validator](https://github.com/tomochain/tomomaster/blob/master/contracts/TomoValidator.sol)
-- Smart Contract ABI: [TomoValidatorAbi.json](https://raw.githubusercontent.com/tomochain/tomomaster/master/abis/TomoValidatorAbi.json)
+- Smart Contract Code: [Tao Validator](https://github.com/taoblockchain/shifu/blob/master/contracts/TaoValidator.sol)
+- Smart Contract ABI: [TaoValidatorAbi.json](https://raw.githubusercontent.com/taoblockchain/shifu/master/abis/TaoValidatorAbi.json)
 
-TomoChain Validator Smart Contract Interface:
+Tao Validator Smart Contract Interface:
 ```javascript
 // apply a new masternode candidate
 function propose(address _candidate) external payable;
@@ -38,20 +38,20 @@ function getWithdrawCap(uint256 _blockNumber) public view returns(uint256);
 
 ```
 
-TomoChain provides RPC APIs. So you can use Web3 library to directly call the functions in the smart contract.
+Tao provides RPC APIs. So you can use Web3 library to directly call the functions in the smart contract.
 
 You can follow the steps below to interact with the smart contract by using Web3 library and NodeJS.
 
 ## Init Web3 provider
-At the first step, you need init Web3 provider by connecting TomoChain Fullnode RPC endpoint.
+At the first step, you need init Web3 provider by connecting Tao Fullnode RPC endpoint.
 
 ```javascript
 const Web3 = require('web3')
-const web3 = new Web3('https://rpc.tomochain.com')
+const web3 = new Web3('https://rpc.tao.network')
 const chainId = 88
 ```
 
-For testnet/mainnet details, you can get network information [here](https://docs.tomochain.com/general/networks/)
+For testnet/mainnet details, you can get network information [here](https://docs.tao.network/general/networks/)
 ## Unlock wallet
 You need to unlock the wallet before staking for the nodes
 #### Example
@@ -63,19 +63,19 @@ web3.eth.accounts.wallet.add(account)
 web3.eth.defaultAccount = owner
 ```
 
-## Init Web3 TomoChain Validator Contract
+## Init Web3 Tao Validator Contract
 
 ```javascript
-const validatorAbi = require('./TomoValidatorAbi.json')
+const validatorAbi = require('./TaoValidatorAbi.json')
 const address = '0x0000000000000000000000000000000000000088'
 const validator = new web3.eth.Contract(validatorAbi,
         address, {gasPrice: 250000000, gas: 2000000 })
 ```
 
-Note: you can get TomoValidatorAbi.json [here](https://raw.githubusercontent.com/tomochain/tomomaster/master/abis/TomoValidatorAbi.json)
+Note: you can get TaoValidatorAbi.json [here](https://raw.githubusercontent.com/taoblockchain/shifu/master/abis/TaoValidatorAbi.json)
 
 ## Propose/Apply a candidate
-Masternode owner need to have at least 50000 TOMO to apply a fullnode to become a Masternode candidate. So make sure you have > 50000 TOMO in your masternode owner wallet to deposit to the smart contract and pay transaction fee.
+Masternode owner need to have at least 100000 TAO to apply a fullnode to become a Masternode candidate. So make sure you have > 100000 TAO in your masternode owner wallet to deposit to the smart contract and pay transaction fee.
 
 You can apply a masternode candidate by call `propose` function from the smart contract
 
@@ -86,7 +86,7 @@ const coinbase = "0xf8ac9d5022853c5847ef75aea0104eed09e5f402"
 
 validator.methods.propose(coinbase).send({
     from : owner,
-    value: '50000000000000000000000', // 50000 TOMO
+    value: '100000000000000000000000', // 100000 TAO
     gas: 2000000,
     gasPrice: 250000000,
     chainId: chainId
@@ -96,16 +96,16 @@ validator.methods.propose(coinbase).send({
 }).catch(e => console.log(e))
 ```
 
-You can refer to [Staking TomoChain script](https://gist.github.com/thanhson1085/7a6471ea0d6c0d6321a0454789d6266c)
+You can refer to [Staking Tao script](https://gist.github.com/thanhson1085/7a6471ea0d6c0d6321a0454789d6266c)
 ## Stake/Vote a candidate
-You can stake at least 100 TOMO for a node by calling `vote` function from the smart contract.
+You can stake at least 100 TAO for a node by calling `vote` function from the smart contract.
 
 #### Example
-Stake 500 TOMO to a node.
+Stake 500 TAO to a node.
 ```javascript
 validator.methods.vote(coinbase).send({
     from: owner,
-    value: '500000000000000000000', // 500 TOMO
+    value: '500000000000000000000', // 500 TAO
     gas: 2000000,
     gasPrice: 250000000,
     chainId: chainId
@@ -119,7 +119,7 @@ validator.methods.vote(coinbase).send({
 You can unstake by calling `unvote` function from the smart contract
 
 ```javascript
-const cap = '500000000000000000000' // unvote 500 TOMO
+const cap = '500000000000000000000' // unvote 500 TAO
 
 validator.methods.unvote(coinbase, cap).send({
     from : owner,
@@ -146,8 +146,8 @@ validator.methods.resign(coinbase).send({
 }).catch(e => console.log(e))
 ```
 
-## Withdraw TOMO
-You need to wait for 48 epochs (if unvote), 30 days (if resign) to unlock your TOMO staked
+## Withdraw TAO
+You need to wait for 48 epochs (if unvote), 30 days (if resign) to unlock your TAO staked
 
 #### Example
 ```javascript
@@ -175,17 +175,17 @@ web3.eth.getBlockNumber().then(blockNumber => {
 ```
 
 ## Get list candidates
-You can get list candidates from [RPC endpoint](https://apidocs.tomochain.com/?shell#eth_getcandidates):
+You can get list candidates from [RPC endpoint](https://apidocs.tao.network/?shell#eth_getcandidates):
 ```
-curl https://rpc.tomochain.com \
+curl https://rpc.tao.network \
     -X POST \
     -H "Content-Type: application/json" \
     -d '{"jsonrpc":"2.0","method":"eth_getCandidates","params": ["latest"],"id":1}'
 
 ```
-Or [get list candidates from TomoMaster](https://apidocs.tomochain.com/?shell#tomomaster-apis-candidates):
+Or [get list candidates from Shifu](https://apidocs.tao.network/?shell#shifu-apis-candidates):
 ```
-curl -X GET https://master.tomochain.com/api/candidates \
+curl -X GET https://shifu.tao.network/api/candidates \
   -H 'Accept: application/json'
 ```
 
