@@ -1,143 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://docs.tomochain.com/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/productoverview/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/productoverview/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/how_to_read/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/how_to_read/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/wallet/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/wallet/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/voting/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/voting/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/general/networks/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/general/networks/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/general/faq/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/general/faq/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/requirements/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/requirements/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/masternode-setup-guide/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/masternode-setup-guide/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/tomonative/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/taonative/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/create-tomochain-masternode/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/create-tao-masternode/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/tmn/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/tmn/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/docker/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/docker/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/applying/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/applying/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/snapshot/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/snapshot/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/run-node/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/run-node/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/get-started/apply-node/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/get-started/apply-node/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/tomox-fullnode/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/waihui-fullnode/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/masternode/tomox-sdk/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/masternode/waihui-sdk/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/general/networks/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/general/networks/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/integrations/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/integrations/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/staking-integrations/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/staking-integrations/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/trc20-integrations/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/trc1-integrations/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/trc21-integrations/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/trc2-integrations/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/tutoprivatenet/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/tutoprivatenet/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/clicommands/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/clicommands/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/dappdeploytuto/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/dappdeploytuto/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/developers/icosmartcontract/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/developers/icosmartcontract/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -146,73 +146,73 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/wp-and-research/technical-whitepaper/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/wp-and-research/technical-whitepaper/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/wp-and-research/sharding-paper/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/wp-and-research/sharding-paper/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/wp-and-research/economics-paper/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/wp-and-research/economics-paper/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/wp-and-research/specs/trc21_standard/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/wp-and-research/specs/trc2_standard/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/wp-and-research/privacy/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/wp-and-research/privacy/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomomaster/features/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/shifu/features/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomoscan/features/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taoscan/features/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomowallet/features/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taowallet/features/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomowallet/voting/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taowallet/voting/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomowallet/terms/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taowallet/terms/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomobridge/faq/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taobridge/faq/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomoissuer/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taoissuer/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomoissuer/termofcondition/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taoissuer/termofcondition/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.tomochain.com/products/tomoissuer/policyprivacy/</loc>
-     <lastmod>2020-01-17</lastmod>
+     <loc>https://docs.tao.network/products/taoissuer/policyprivacy/</loc>
+     <lastmod>2020-03-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
