@@ -167,29 +167,29 @@ docker-compose ps
 
 For more docker-compose commands, use `docker-compose --help` or refer to their [documentation](https://docs.docker.com/compose/reference/overview/).
 
-## Migrating from `tmn`
+## Migrating from `taomn`
 
-You can find a guide on migrating from `tmn` in the [wiki](https://github.com/taoblockchain/docs/wiki/Migrate-from-tmn-to-docker-compose-with-create-tao-masternode).
+You can find a guide on migrating from `taomn` in the [wiki](https://github.com/taoblockchain/docs/wiki/Migrate-from-taomn-to-docker-compose-with-create-tao-masternode).
 
-For the long time masternode runners who started with our older tool, `tmn`, here are the commands to achieve the same actions.
+For the long time masternode runners who started with our older tool, `taomn`, here are the commands to achieve the same actions.
 
-**tmn start**:
+**taomn start**:
 ```
 docker-compose up -d
 ```
 
-**tmn stop**:
+**taomn stop**:
 ```
 docker-compose stop
 ```
 
-**tmn update**:
+**taomn update**:
 ```
 docker-compose pull
 docker-compose up -d
 ```
 
-**tmn remove**:
+**taomn remove**:
 ```
 docker-compose down
 ```

@@ -29,7 +29,7 @@ On the top right corner, click on "Become a Candidate".
 Enter the amount of TAO you want to deposit (minimum 50'000).
 
 Enter your coinbase address. This is the public key of the account that your masternode is using.
-If your are running your node with `tmn`, you can simply run `tmn inspect` to get it.
+If your are running your node with `taomn`, you can simply run `taomn inspect` to get it.
 
 Confirm with apply and proceed to make the payement.
 
@@ -47,9 +47,9 @@ Access Shifu for [testnet](https://master.testnet.tao.network) or
 and click the `Resign` button.
 Your funds will be available to withdraw 1440 epochs (around 30 days) after the resignation.
 
-After resigning successfully, you can stop your node. If you ran it with `tmn`, simply run:
+After resigning successfully, you can stop your node. If you ran it with `taomn`, simply run:
 ```
-tmn remove
+taomn remove
 ```
 
 At this point, your masternode is completly terminated.

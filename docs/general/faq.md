@@ -466,16 +466,16 @@ Only the 150 masternodes elected will be able to sign blocks and will receive re
 See this [Medium post](https://medium.com/taoblockchain/how-to-run-a-tao-masternode-from-a-to-z-3793752dc3d1).
 
 #### Where can I find the latest masternode guide or the instructions for setting up a masternode?
-Find more details about tmn here: [https://docs.tao.network/masternode/tmn/](https://docs.tao.network/masternode/tmn/) 
+Find more details about taomn here: [https://docs.tao.network/masternode/taomn/](https://docs.tao.network/masternode/taomn/) 
 
-#### What is the command to start a fullnode with 'tmn'?
-`tmn start --name node_name --net mainnet --pkey your_private_key`
+#### What is the command to start a fullnode with 'taomn'?
+`taomn start --name node_name --net mainnet --pkey your_private_key`
 
-#### tmn is installed but just not in your path."
-See: [https://docs.tao.network/masternode/tmn/#tmn-command-not-found](https://docs.tao.network/masternode/tmn/#tmn-command-not-found)
+#### taomn is installed but just not in your path."
+See: [https://docs.tao.network/masternode/taomn/#taomn-command-not-found](https://docs.tao.network/masternode/taomn/#taomn-command-not-found)
 
-#### I tried stopping the node using 'tmn stop', but after that I ran 'tmn status' it still says running."
-You can run `tmn --debug stop` and send the log to us.
+#### I tried stopping the node using 'taomn stop', but after that I ran 'taomn status' it still says running."
+You can run `taomn --debug stop` and send the log to us.
 We will help you to investigate the issue.
 
 #### Do I need two wallets to run a Masternode?
@@ -505,7 +505,7 @@ It is recommended to use a separate empty account for your masternode as it only
 
 The block rewards are sent to the account connected to Shifu who make the initial deposit - the 'private' address.
 
-#### Can I use the same address pair (tmn public address + initial deposit address) for all my nodes? Or I have to transfer tokens to another wallet and start the second node?
+#### Can I use the same address pair (taomn public address + initial deposit address) for all my nodes? Or I have to transfer tokens to another wallet and start the second node?
 No.
 Must use different public 'coinbase' addresses.
 But you can use the same initial deposit ('private') address, then all rewards will be transferred to only one address.
@@ -513,7 +513,7 @@ But you can use the same initial deposit ('private') address, then all rewards w
 #### I have finished all steps of setting up node. Why I don't see my node on Shifu?
 You must apply to become a masternode candidate.
 
-#### Do I need to deposit the 50K TAO before or after running 'tmn' in VPS?
+#### Do I need to deposit the 50K TAO before or after running 'taomn' in VPS?
 After. Your node must be fully synched before applying.
 
 #### How do I check the blockchain sync status from the node?
@@ -542,7 +542,7 @@ This can happen as long as the node isn't back up or kicked out of the top 150.
 Some reasons for being Slashed might be that the masternode does not have the correct Tao software, lack of memory or masternode crashes due to the lack of e-maintenance and operation by the masternode owner.
 
 #### How do I update my Masternode to the newest version?
-Run this command: `pip3 install -U tmn && tmn update && tmn start`
+Run this command: `pip3 install -U taomn && taomn update && taomn start`
 
 #### How many nodes I am allowed to run?
 As many as you can.
@@ -711,7 +711,7 @@ Example: [https://scan.testnet.tao.network/txs/0x838d33119b33e4519cb201e49bfc570
 TaoStats shows the various metrics regarding the current mainnet including the current number of masternodes, masternodes performance, current TPS, block-time, confirmation time, finality and other useful metrics.
 
 #### How much is the average time to see my node appear on TaoStats?
-It should be less than a minute after tmn command is executed and finished.
+It should be less than a minute after taomn command is executed and finished.
 
 #### Stats page wasn't working and showed a 70-second block. What happened?
 The stats page is javascript code running in your browser.

@@ -1,4 +1,4 @@
-Alternatively to using our simple tool `tmn`, people or companies with existing infrastructure might want to directly run our docker images for more flexibility.
+Alternatively to using our simple tool `taomn`, people or companies with existing infrastructure might want to directly run our docker images for more flexibility.
 
 To achieve that, you just need to run our `tao/node` docker image.
 

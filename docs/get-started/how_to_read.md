@@ -17,7 +17,7 @@ A financial requirement of 50k TAO is also needed to [apply](/masternode/mastern
 to become a masternode candidate.
 For this, masternode owners are highly recommended to carefully read our dedicated guide
 to [running a masternode](/masternode/masternode-setup-guide), 
-using [tmn](/masternode/masternode-setup-guide/#6-installing-tmn-utility) and [Docker](/masternode/masternode-setup-guide/#5-setup-docker-logged-in-as-new-user).
+using [taomn](/masternode/masternode-setup-guide/#6-installing-taomn-utility) and [Docker](/masternode/masternode-setup-guide/#5-setup-docker-logged-in-as-new-user).
 Also, masternode owners can follow our [tutorial](https://medium.com/taoblockchain/how-to-run-a-tao-masternode-from-a-to-z-3793752dc3d1) on Tao medium page 
 and our [wiki page](https://github.com/taoblockchain/docs/wiki).
 

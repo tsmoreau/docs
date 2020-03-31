@@ -34,9 +34,9 @@ You may need to edit your firewall configuration accordingly.
 If you have other production grade environment than cloud provider at your displosal, 
 please tell us more about on our [Gitter](https://gitter.im/taoblockchain).
 
-## tmn
+## taomn
 
-We made a simple command line interface called [tmn](https://github.com/taoblockchain/masternode) 
+We made a simple command line interface called [taomn](https://github.com/taoblockchain/masternode) 
 to easily and quickly start a Tao full node.
 It takes care of starting the necessary docker containers with the proper settings for you.
 It will really suit you if you don't already have a big infrastructure running.
@@ -44,7 +44,7 @@ Spin up a machine in your favorite cloud and get your full node running in a few
 
 ### Prerequisites
 
-To use tmn, you should meet these requirements in addition to the hardware ones:
+To use taomn, you should meet these requirements in addition to the hardware ones:
 
 - [Docker CE](https://docs.docker.com/install/)
 - [Python](https://docs.python-guide.org/starting/install3/linux/) >= 3.5
@@ -54,7 +54,7 @@ To use tmn, you should meet these requirements in addition to the hardware ones:
 Simply install it from pip.
 
 ```
-pip3 install --user tmn
+pip3 install --user taomn
 ```
 
 ### Update
@@ -62,12 +62,12 @@ pip3 install --user tmn
 Update it from pip.
 
 ```
-pip3 install -U tmn
+pip3 install -U taomn
 ```
 
 ### First start
 
-When you first start your full node with tmn, you need to give some informations.
+When you first start your full node with taomn, you need to give some informations.
 
 `--name`: The name of your full node.
 It should be formatted as a slug string.
@@ -87,7 +87,7 @@ The rewards are sent to the account who will make the 50k TAO initial deposit.
 It could look like this:
 
 ```
-tmn start --name [YOUR_NODE_NAME] \
+taomn start --name [YOUR_NODE_NAME] \
     --net testnet \
     --pkey [YOUR_COINBASE_PRIVATE_KEY]
 ```
@@ -116,7 +116,7 @@ Useful for applying your full node as a masternode.
 
 ### Troubleshooting
 
-#### tmn: command not found
+#### taomn: command not found
 
 It might happen that your PATH is not set by default to include the default user binary directory.
 You can add it by adding it to your shell $PATH:

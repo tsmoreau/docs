@@ -11,12 +11,12 @@ Basically, you download a compressed version of the last-known "good" chaindata.
 *Note: Assure that you have enough disk space for both the tar file AND its uncompressed contents. Double the space or more.*
 
 ```
-# Login as user that has access to tmn
+# Login as user that has access to taomn
 # Download Tao's chaindata archive (make sure you have enough disk space available)
 wget -c https://chaindata.tao.network/20190813.tar -P /tmp
 
-# Stop your node (for tmn users)
-tmn stop
+# Stop your node (for taomn users)
+taomn stop
 # or in the node folder (for docker-compose users)
 docker-compose stop
 
@@ -33,8 +33,8 @@ docker volume ls
 cd /tmp
 sudo tar xvC /var/lib/docker/volumes/NAME_OF_YOUR_VOLUME/_data/data/tao/ -f 20190813.tar
 
-# Start your node back(for tmn users)
-tmn start
+# Start your node back(for taomn users)
+taomn start
 # or in the node folder (for docker-compose users)
 docker-compose start
 

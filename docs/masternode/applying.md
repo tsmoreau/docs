@@ -8,7 +8,7 @@ Therefore, candidates have an incentive to do as much as they can such as signal
 ## Requirements
 To have a masternode candidate, the following requirements must be satisfied:
 
-- The token holder has an up and running node -- see our [documentation](https://docs.tao.network/masternode/tmn/).
+- The token holder has an up and running node -- see our [documentation](https://docs.tao.network/masternode/taomn/).
 
 - The token holder must hold a minimum required amount of tokens (50 000 TAO).
 These 50 000 TAO are deposited to the Voting Smart Contract.
@@ -28,7 +28,7 @@ On the top right corner, click on "Become a Candidate".
 Enter the amount of TAO you want to deposit (minimum 50'000).
 
 Enter your coinbase address. This is the address of the account that your masternode is using.
-If your are running your node with `tmn`, you can simply run `tmn inspect` to get it.
+If your are running your node with `taomn`, you can simply run `taomn inspect` to get it.
 
 !!! note "Important note:"
 	We advise for security measures to use a fresh new account for your masternode or 'coinbase address'.
@@ -52,9 +52,9 @@ In case you want to stop your node, you need to resign it from the governance fi
 Access Shifu, go to your candidate detail page, and click the `Resign` button.
 Your funds will be available to withdraw 30 days after the resignation (1,296,000 blocks).
 
-After resigning successfully, you can stop your node. If you ran it with `tmn`, simply run:
+After resigning successfully, you can stop your node. If you ran it with `taomn`, simply run:
 ```
-tmn remove
+taomn remove
 ```
 
 At this point, your masternode is completely terminated.
