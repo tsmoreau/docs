@@ -1,4 +1,4 @@
-# TAO - The Only Smart Contract Platform Designed for the Music Economy
+# TAO - Designed for the Music Economy
 
 ## Preface
 

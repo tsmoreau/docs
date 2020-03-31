@@ -2,7 +2,7 @@ site_name: Tao Documentation
 site_description: Tao aims to be a public EVM-compatible blockchain with the following advantages as low transaction fee, fast confirmation time, double validation.
 
 theme:
-  name: 'material'
+  name: 'mkdocs'
   custom_dir: material_override
   logo: 'images/logo.svg'
   favicon: 'images/favicon.ico'
