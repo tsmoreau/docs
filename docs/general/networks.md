@@ -4,15 +4,15 @@ Tao, a independent public blockchain, the most efficient platform for the music 
 
 ### Specifications
 
-- Chain id: `64`
+- Chain id: `558`
 - RPC endpoint: `https://rpc.tao.network`
-- Websocket endpoint: `wss://ws.tao.network`
-- Metrics endpoint: `https://metrics.tao.network`
-- HD derivation path: `m/44'/649'/0'/0/`
+- Websocket endpoint: `wss://rpc.tao.network`
+- Metrics endpoint: `https://stats.tao.network`
+- HD derivation path: `m/44'/558'/0'/0/`
 - Consensus: DPOS
 - Block finality: `>75%`
 - Consensus nodes: up to 150 (masternodes)
-- Genesis block date: `December 14th, 2018`
+- Genesis block date: `March 23nd, 2020`
 - Transaction fee: gas price 0.25 Gwei
 - Smart contract creation fee: gas price 10000 Gwei, gas limit >= 1000000
 - Solidity Compiler version: < 0.5
@@ -26,14 +26,12 @@ Tao, a independent public blockchain, the most efficient platform for the music 
 ### Bootnodes
 
 ```
-enode://97f0ca95a653e3c44d5df2674e19e9324ea4bf4d47a46b1d8560f3ed4ea328f725acec3fcfcb37eb11706cf07da669e9688b091f1543f89b2425700a68bc8876@3.212.20.0:30301
-enode://b72927f349f3a27b789d0ca615ffe3526f361665b496c80e7cc19dace78bd94785fdadc270054ab727dbb172d9e3113694600dd31b2558dd77ad85a869032dea@188.166.207.189:30301
-enode://c8f2f0643527d4efffb8cb10ef9b6da4310c5ac9f2e988a7f85363e81d42f1793f64a9aa127dbaff56b1e8011f90fe9ff57fa02a36f73220da5ff81d8b8df351@104.248.98.60:30301
+
 ```
 
 ### Stats websocket secret
 
-`getty-site-pablo-auger-room-sos-blair-shin-whiz-delhi`
+`trowel-moral-freedom-able-chest-success-climate`
 
 Host: stats.tao.network:443
 
@@ -45,8 +43,8 @@ The Testnet network is meant to be a public demo of our products and a way for u
 
 - Chain id: `89`
 - RPC endpoint: `https://rpc.testnet.tao.network`
-- Websocket endpoint:  `wss://ws.testnet.tao.network`
-- Metrics endpoint: `https://metrics.testnet.tao.network`
+- Websocket endpoint:  `wss://rpc.testnet.tao.network`
+- Metrics endpoint: `https://stats.testnet.tao.network`
 - HD derivation path: `m/44'/889'/0'/0/`
 - Consensus: DPOS
 - Block finality: `>75%`
@@ -75,12 +73,10 @@ You can try all the features we propose like voting, running a masternode, disco
 ### Bootnodes
 
 ```
-enode://ce1191bf9a634e7939676d136816ad84941b079c03d6a96e64cca35852363012169055c6879c644e821dc236a01d0499a1b7ff39e9518dbc00da87c7f1898604@13.251.101.216:30301
-enode://cf2d05f71f143d85dce45dae6f74fae0ba56fc5ea1d1c548a095e29a5becb3a1fb93eb33e7b1dec43946dcfe608fd1495a02740af710bc615b90ad60fcc04d14@13.250.94.232:30301
 ```
 
 ### Stats websocket secret
 
-`anna-coal-flee-carrie-zip-hhhh-tarry-laue-felon-rhine`
+``
 
 Host: wss://stats.testnet.tao.network:443
