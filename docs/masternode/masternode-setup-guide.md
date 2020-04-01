@@ -225,7 +225,7 @@ If the default SSH port is not changed, you could see nefarious connection-attem
 At a minimum, you will want to consider:
 
 * SSHD on non-standard port
-* UFW (Uncomplicated Fire Wall) (open port 30303 tcp & udp, and above non-standard SSH)
+* UFW (Uncomplicated Fire Wall) (open port 20202 tcp & udp, and above non-standard SSH)
 
 Other security options you could consider:
 

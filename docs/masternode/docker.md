@@ -30,8 +30,8 @@ This image runs the [Tao go client](https://github.com/taoblockchain/taoblockcha
 
 | Exposed | Protocol | Description               |
 | ------- | --------- | ------------------------- |
-| `30303` | tcp       | Tao client p2p port |
-| `30303` | udp       | Tao client p2p port |
+| `20202` | tcp       | Tao client p2p port |
+| `20202` | udp       | Tao client p2p port |
 | `8545`  | tcp       | Blockchain RPC            |
 | `8546`  | tcp       | Blockchain WS             |
 
@@ -53,8 +53,8 @@ docker run -d --name masternode \
   -e NETSTATS_HOST=stats.tao.network \
   -e NETSTATS_PORT=443 \
   -e WS_SECRET=$STATS_WS_SECRET \
-  -p 30303:30303 \
-  -p 30303:30303/udp \
+  -p 20202:20202 \
+  -p 20202:20202/udp \
   -v chaindata:/taoblockchain/data \
   tao/node:stable
 ```
@@ -74,8 +74,8 @@ services:
       NETSTATS_PORT: 443
       WS_SECRET: $STATS_WS_SECRET
     ports:
-      - 30303:30303
-      - 30303:30303/udp
+      - 20202:20202
+      - 20202:20202/udp
     volumes:
       - chaindata:/taoblockchain/data
 ```

@@ -119,7 +119,7 @@ tao account list --datadir $DATA_DIR  --keystore $KEYSTORE_DIR
 #### Let's start a node
 ```bash
 tao  --syncmode "full" \
-    --datadir $DATA_DIR --networkid $NETWORK_ID --port 30303 \
+    --datadir $DATA_DIR --networkid $NETWORK_ID --port 20202 \
     --keystore $KEYSTORE_DIR --password $PASSWORD \
     --identity $IDENTITY \
     --mine --gasprice 250000000 \
@@ -130,7 +130,7 @@ tao  --syncmode "full" \
 If you are a dapp developer, you should open RPC and WS apis:
 ```bash
 tao  --syncmode "full" \
-    --datadir $DATA_DIR --networkid $NETWORK_ID --port 30303 \
+    --datadir $DATA_DIR --networkid $NETWORK_ID --port 20202 \
     --keystore $KEYSTORE_DIR --password $PASSWORD \
     --rpc --rpccorsdomain "*" --rpcaddr 0.0.0.0 --rpcport 8545 --rpcvhosts "*" \
     --rpcapi "db,eth,net,web3,personal,debug" \
@@ -157,7 +157,7 @@ tao  --syncmode "full" \
            
 --networkid: our network ID.
            
---port: your full-node's listening port (default to 30303)
+--port: your full-node's listening port (default to 20202)
            
 --rpc, --rpccorsdomain, --rpcaddr, --rpcport, --rpcvhosts: your full-node will accept RPC requests at 8545 TCP.
            

@@ -27,7 +27,7 @@ come up with those minimal requirements for any Tao masternode host.
 We recommand prioritizing CPU. For example with Digital Ocean, pick a CPU optimized droplet. 
 On AWS EC2, an C5 type instance would be a perfect match.
 
-The full node will serve on port `30303` udp and tcp for p2p 
+The full node will serve on port `20202` udp and tcp for p2p 
 communication with other nodes, `8545` tcp for RPC api and `8546` tcp for websocket api.
 You may need to edit your firewall configuration accordingly.
 

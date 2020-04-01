@@ -11,7 +11,7 @@ Command:
 - `--identity`: your full-node's name.
 - `--password`: your account's password.
 - `--networkid`: our network ID.
-- `--port`: your full-node's listening port (default to 30303)
+- `--port`: your full-node's listening port (default to 20202)
 - `--rpc, --rpccorsdomain, --rpcaddr, --rpcport, --rpcvhosts`: your full-node will accept RPC requests at 8545 TCP.
 - `--ws, --wsaddr, --wsport, --wsorigins`: your full-node will accept Websocket requests at 8546 TCP.
 - `--mine`: [required] your full-node wants to register to be a candidate for masternode selection.

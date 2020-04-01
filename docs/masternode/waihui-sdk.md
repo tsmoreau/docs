@@ -50,7 +50,7 @@ fullnode [here](https://docs.tao.network/masternode/requirements/))
 Your server needs to open these ports:
 
 * 80/443 for HTTP/HTTPs
-* 30303 for fullnode
+* 20202 for fullnode
 
 #### All IT systems require maintenance ####
 
@@ -207,7 +207,7 @@ After reloading `nginx` with the new configuration. You can access your DEX via 
 
 **How to secure my DEX?**
 
-You need to setup HTTPS and INBOUND firewall for your DEX, open only SSH (22), HTTP (80), HTTPS (443), Fullnode RLPX (30303).
+You need to setup HTTPS and INBOUND firewall for your DEX, open only SSH (22), HTTP (80), HTTPS (443), Fullnode RLPX (20202).
 
 You can setup firewall by using software on your server or create firewall on your cloud provider.
 
