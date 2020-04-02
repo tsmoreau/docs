@@ -42,7 +42,7 @@ extra:
         - type: 'twitter'
           link: 'https://twitter.com/taoblockchain'
         - type: 'telegram'
-          link: 'https://t.me/taoblockchain'
+          link: 'https://t.me/TaoCryptocurrency'
         - type: 'medium'
           link: 'https://medium.com/taoblockchain'
 
@@ -95,7 +95,6 @@ nav:
         - API Documentation: https://apidocs.tao.network
     - Whitepapers/Specs:
       - Technical whitepaper: wp-and-research/technical-whitepaper.md
-      - Sharding design paper: wp-and-research/sharding-paper.md
       - Economics paper: wp-and-research/economics-paper.md
       - Standard & Specification:
           - TRC2 Specification: wp-and-research/specs/trc2_standard.md
