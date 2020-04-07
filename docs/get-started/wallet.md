@@ -1,6 +1,6 @@
 ## TaoWallet
 
-Download TaoWallet from [Apple Store](https://itunes.apple.com/vn/app/tao-wallet/id1436476145) or [Google Play](https://play.google.com/store/apps/details?id=com.tao.wallet).
+Download TaoWallet from the [Apple Store](https://itunes.apple.com/vn/app/tao-wallet/id1436476145) or [Google Play](https://play.google.com/store/apps/details?id=com.tao.wallet).
 You can create a new wallet, import an existing wallet, vote for Masternodes and transfer/receive TAO back and forth.
 
 *Note: Under Settings you can Choose Network: Tao (Mainnet) or Tao DevNet (Testnet).*
@@ -9,17 +9,15 @@ You can create a new wallet, import an existing wallet, vote for Masternodes and
 
 ## Metamask
 
-Tao will guide you how to connect MetaMask to Tao Mainnet.
-It is an essential step to study an overview of Tao features in term of meeting the crypto trading needs on system.
+Here is  how to connect MetaMask to the theTao Mainnet. It is an essential step to interact with the Tao blockchain.
 
-Get started! You first need to install [MetaMask Extension](https://metamask.io/) on Chrome or Brave browsers.
-Once you agree to the Metamask Terms of Use and create an account successfully, follow instructions:
+Getting started: You first need to install the MetaMask Extension on the Chrome or Brave browsers. Once you agree to the Metamask Terms of Use and create an account successfully, follow these instructions:
 
-**Step 1:** Click MetaMask logo on the browser to open the Extension -> select `Network` -> select `Custom RPC` as shown below:
+**Step 1:** Click the MetaMask logo on the browser to open the Extension -> select Network -> select Custom RPC as shown below:
 
 ![metamask1](/assets/metamask1.jpg)
 
-**Step 2:** When Settings screen pops up, scroll down to `New Network` and click `Show Advanced Options`.
+**Step 2:** When the Settings screen pops up, scroll down to `New Network` and click `Show Advanced Options`.
 Enter the following information, then Save:
 
 - New RPC URL: `https://rpc.tao.network`
@@ -33,12 +31,12 @@ Set `Privacy Mode` On, if you want to connect Metamask with your hardware wallet
 
 ![metamask3](/assets/metamask3.jpg)
 
-**Step 3:** You are successfully connected to Tao Mainnet.
+**Step 3:** You are successfully connected to the Tao Mainnet.
 
 ## MyEtherWallet
 
 Tao is now supported by [MyEtherWallet](https://www.myetherwallet.com/). 
-In order to connect your MyEtherWallet wallet to Tao, all you need to do is to choose `Network TAO` in the dropdown network list at top right corner.
+In order to connect your MyEtherWallet wallet to Tao, all you need to do is to choose `Network TAO` in the dropdown network list in the top right corner.
 
 ![mewtao](/assets/mewtao.jpg) 
 
