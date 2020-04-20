@@ -6,7 +6,7 @@
 
 #### What is Tao?
 Tao is an novel solution to the data sharing, integration, and monetization problems of the music economy by implementing a custom smart contract protocol designed specifically for the music industry, by the music industry.
-Tao relies on a system of 150 Masternodes with Delegated Proof of Stake (DPOS) consensus that can support low transaction fees and 2-second transaction confirmation times.
+Tao relies on a system of 150 Masternodes with Delegated Proof of Stake (DPOS) consensus that can support low transaction fees and 5-second transaction confirmation times.
 Security, stability and chain finality are guaranteed via novel techniques such as the Random Generals Gambit and decentralized rewards for users who support the most reliable block producers via smart-contracts.
 
 Tao supports all EVM-compatible smart-contracts, protocols and atomic cross-chain token transfers.
@@ -29,11 +29,11 @@ Nevertheless, the reality is disappointing: Bitcoin and Ethereum can only proces
 Tao is continuously working and researching several scaling solutions.
 Regarding on-chain scaling, Sharding and Proof-of-Stake-based consensus are of potential that can significantly improve transaction processing performance while trying to maintain the security requirements of the system, however Tao enjoys a "second mover" market advantage and will continue to investigate and research additional scaling methodologies. 
 
-Tao supports low fee and 2-second transaction confirmation times.
+Tao supports low fee and 5-second transaction confirmation times.
 Tao can currently process 2,000-5,000 transactions per second (TPS).
 
 #### How does Tao work? What is the architecture and consensus used?
-Tao relies on a system of 150 Masternodes with Delegated Proof of Stake (DPOS) consensus that can support low fees (approx. 1/100 of that of Ethereum's) and 2-second transaction confirmation times.
+Tao relies on a system of 150 Masternodes with Delegated Proof of Stake (DPOS) consensus that can support low fees (approx. 1/100 of that of Ethereum's) and 5-second transaction confirmation times.
 Security, stability and chain finality are guaranteed via novel techniques such as Random Generals and staking via smart-contracts.
 
 #### Can you tell more about Delegated Proof of Stake (DPOS)? What is it?
@@ -41,7 +41,7 @@ At the heart of Tao, the Delegated Proof-of-Stake (DPOS) consensus mechanism ena
 
 DPOS features its Masternode architecture in which token holders deposit 100,000 TAO to become a masternode candidate and receive votes from other token holders.
 The most voted masternode candidates are selected as masternodes for block creation within a period, called an epoch.
-Each masternode takes its block creation in a round-robin manner every 2-seconds and follows the double validation technique for security reinforcement.
+Each masternode takes its block creation in a round-robin manner every 5 seconds and follows the double validation technique for security reinforcement.
 A block is finalised if it is signed off by 3/4 of masternodes.
 At the end of each epoch, the masternodes that have signed finalised blocks are rewarded.
 Stakers who voted for those masternodes will also be rewarded.
@@ -52,11 +52,11 @@ Specifically, when a block is created by a masternode, it must be verified by an
 This solves the Byzantine Generals Problem of proof of stake by selecting a "general" at random from those units in the field.  Derived from three years of experience with an operating proof of stake network in the wild, this unique innovation provides for an entirely new level of transaction finality and reliability in proof of stake networks.
 
 #### What is an 'epoch'?
-An epoch is a 900-block period of 2-second block times starting from block #1 (900 blocks x 2s/block = around 1800s or ~30 minutes).
+An epoch is a 360-block period of 5-second block times starting from block #1 (360 blocks x 5s/block = around 1800s or ~30 minutes).
 
 #### Which scaling solutions will Tao implement? Will you have sharding?
-Tao solutions are based on on-chain scaling built into an architecture of 150 voted masternodes with our Delegated Proof-of-stake Voting (DPOS) consensus protocol.
-We achieve 2-second block-times and almost instant transaction confirmation.
+Tao solutions are based on on-chain scaling built into an architecture of no more than 150 voted masternodes with our Delegated Proof-of-stake Voting (DPOS) consensus protocol.
+We achieve 5-second block-times and almost instant transaction confirmation.
 
 To scale further our infrastructure, we are looking very closely at sharding but will remain open to new advancements as the industry moves forward.
 
@@ -64,13 +64,13 @@ Besides sharding, we are actively researching scalability solutions like EVM par
 Hardware integration will be evaluated before being integrated into Tao's masternode architecture.
 
 #### What is the current TPS? What is your targeted transaction speed and when do you think you can achieve that speed?
-Tao supports low transaction fees (approx. 1/100 of that of Ethereum's) and 2-second transaction confirmation times.
+Tao supports low transaction fees (approx. 1/30th of that of Ethereum's) and 5-second transaction confirmation times.
 The mainnet with DPOS Masternodes delivers 2,000 transactions per second (TPS).
 
 #### What makes Tao different?
 The unique point of Tao comes from technology, the ecosystem, and the community.  Tao is the only smart contract platform dedicated to serving the needs of the music economy.
 
-**Novel technology:** includes
+**Technology:** includes
 
 - Delegated Proof of Stake consensus
 - On-chain governance via smart contract
@@ -80,10 +80,10 @@ This enables Tao to achieve:
 
 - Cheap transactions: approx. 1/100 of that of Ethereum
 - 2000 TPS to handle a robust d-app and token ecosystem; TPS will be dramatically higher once our sharding solution is enabled (20k-30k TPS)
-- 2 second block times for fast transactions
+- 5 second block times for fast transactions
 - EVM-compatibility allows for interoperability with Ethereum ecosystem.
 
-**Our unique products**
+**Our product lineup**
 
 - TaoScan: Shows all blocks, transactions, finality, smart contracts, D-Apps and token information
 - Shifu: Allows users to apply for a Masternode Candidate position; to vote for Masternodes and shows Masternode performance statistics
@@ -193,7 +193,7 @@ You can keep in touch with our latest news here:
 Tao supports all EVM-compatible smart-contracts, protocols, and atomic cross-chain token transfers.
 This means that any smart-contract written in Ethereum protocol can be easily ported to Tao.
 
-Any d-App written in Solidity can be seamlessly ported to Tao, instantly enjoying all of Tao's advantages: almost zero-transaction fees; 2-second confirmation times; 2,000 TPS and soon 20K-30K TPS once sharding is enabled.
+Any d-App written in Solidity can be seamlessly ported to Tao, instantly enjoying all of Tao's advantages: almost zero-transaction fees; 5-second confirmation times; 2,000 TPS and soon 20K-30K TPS once sharding is enabled.
 
 D-app developers also have dedicated technical support from Tao developers.
 
@@ -224,7 +224,7 @@ Masternodes are responsible for creating, verifying and finalizing the blocks cr
 Masternodes and Stakers will receive block rewards in TAO.
 
 #### What is TAO circulating supply and total supply?
-The initial circulating supply at the Tao 1.0 genesis block was 33,000,000.  Since launch, the network has generated roughly another 1,000,000 tokens via consensus. Another 21,000,000 tokens were minted with the migration to Tao 2.0 and sold on the open market to raise intial funds, bringing the circulating total to 55,000,000, however the current circulating supply is increasing every epoch.
+The initial circulating supply at the Tao 1.0 genesis block was 33,000,000.  Since launch, the network has generated roughly another 1,000,000 tokens via consensus. Another 21,000,000 tokens were minted with the migration to Tao 2.0 and sold on the open market to raise intial funds, bringing the circulating total to 200,000,000, however the current circulating supply is increasing every epoch.
 
 After 8 years, TAO's total supply is fixed at 100,000,000 TAO.
 
@@ -244,13 +244,11 @@ The token allocation is splitted as follows:
 - 6th, 7th and 8th year: 1 million TAO annually
 
 #### Will Tao have inflation?
-The total supply is fixed at 100 million TAO in the first 8 years (non-inflationary).
-17 million TAO which are reserved as block rewards will have been all distributed after 8 years.
-At that time, we are expecting that block rewards will come from the exchange fees.
-But the Board of Governors shall evaluate the economic situation at the time block rewards expire and may decide to increase the total supply by 0.5-1 million TAO per year (which will be used as block rewards) (~small inflation, 0.5%-1% annually).
+The total supply will start at 200 million TAO with 6 million new Tao generated per year for the first 2 years.
+After that, masternode fees are expected to come from DEX fees, but the Board of Governors will consider the economic situation at the time  and may elect to increase the total supply by 0.5-1 million TAO per year (which will be used as block rewards) (~small inflation, 0.5%-1% annually).
 
 #### How often are block rewards paid out?
-Block rewards will be earned every epoch, which consists of 900 two-second-blocks (~30 minutes). Those users which have delegates assigned to masternodes which have produced blocks will also be rewarded..
+Block rewards will be earned every epoch, which consists of 360 five-second-blocks (~30 minutes). Those users which have delegates assigned to masternodes which have produced blocks will also be rewarded..
 
 #### If Tao has zero fees, how can Masternodes get rewards?
 The block rewards will be emitted from a reserved fund with 17 million TAO for the first 8 years.
@@ -311,7 +309,7 @@ You can currently purchase TAO on Alt.Market and QTrade.io.
 #### Does Tao have Masternodes? How do they work?
 Yes, Tao has a maximum of 150 Masternodes with Delegated Proof of Stake (DPOS) consensus with low transaction fees, and instant transaction confirmations. Masternodes create, verify and validate new blocks on Tao’s blockchain.
 
-- **Masternode Candidates:** Any account can deposit 50,000 TAO using [Shifu](https://shifu.tao.network/) to become a masternode candidate.
+- **Masternode Candidates:** Any account can deposit 100,000 TAO using [Shifu](https://shifu.tao.network/) to become a masternode candidate.
 A candidate can resign, but the tokens will be locked for the next 30 days (1,296'000 blocks) after the resignation.
 - **Becoming a Masternode:** A candidate becomes a masternode when he/she belongs to the top 150 most voted candidates in each epoch.
 A Masternode can resign, but the tokens will be locked for the next 30 days after the resignation.
@@ -350,17 +348,17 @@ In the future we plan to have a built-in DEX, with revenues going to Masternodes
 
 #### When are Masternode rewards paid out?
 Masternode operators and stakers will receive rewards every epoch.
-An epoch is a 900-block period of 2-second block time (~30 minutes). 
+An epoch is a 360-block period of 5-second block time (~30 minutes). 
 
 #### How can I check my rewards?
 You can check your masternode/staking rewards using TaoWallet.
 Alternatively you can use Shifu or TaoScan.
 
 #### How much rewards will Masternodes receive?
-Each epoch consists of 900 blocks, which will reward a total of 250 TAO in the first two years.
-This amount of 250 TAO will be divided to all of the Masternodes proportionally to the number of signatures they sign during the epoch.
+Each epoch consists of 360 blocks, which will reward a total of 360 TAO per epoch in the first two years.
+This amount of 360 TAO will be divided to all of the Masternodes proportionally to the number of signatures they sign during the epoch.
 
-Example: With only 25 Masternodes and equal performances, every masternode would be rewarded with 10 TAO. With 125 Masternodes, each one would receive 2 TAO per epoch.
+Example: With only 25 Masternodes and equal performances, every masternode would be rewarded with 14.4 TAO. With 150 Masternodes, each one would receive 1.152 TAO per epoch.
 
 Please, refer to our [Economics paper](https://docs.tao.network/wp-and-research/economics-paper/) for more details about the masternodes reward.
 
@@ -384,7 +382,7 @@ One example is outlined below.
 
 Scenario: 150 Masternodes, 12.5 million tokens voting (a total of 20 million token locked).
 
-Reward achieved per epoch (900 blocks):
+Reward achieved per epoch (360 blocks):
 
 - `By a Masternode = 0.6667 Tao`
 - `By a Voter with 1K Tao staked = 0.00625 Tao`
@@ -404,7 +402,7 @@ Approximate reward achieved per year:
 ### Masternode Candidate
 
 #### What is a masternode candidate? What is the difference between masternode candidate and masternode?
-A Masternode Candidate is any node who deposited 50K TAO and is listed on [Shifu](https://shifu.tao.network/).
+A Masternode Candidate is any node who deposited 100K TAO and is listed on [Shifu](https://shifu.tao.network/).
 
 One Candidate only becomes a Masternode when he is in the top-150 most-voted masternode candidates in an epoch.
 Only these elected masternodes will be able to sign blocks and receive block rewards.
@@ -414,7 +412,7 @@ The first step to become a masternode, is becoming a masternode candidate.
 To become a Masternode Candidate you need:
 
 - to run Tao software in a machine with certain minimal hardware requirements
-- to deposit 50’000 TAO in a smart-contract via Shifu
+- to deposit 100’000 TAO in a smart-contract via Shifu
 
 The list of Masternode Candidates will be available on the governance DApp, [Shifu](https://shifu.tao.network/).
 The next step is to be elected as one of the top 150 most voted candidates. 
@@ -447,7 +445,7 @@ Setting up a masternode candidate on a weaker machine might result in poor perfo
 
 #### How do Masternode Candidates become Masternodes?
 Once you are a Masternode Candidate, you need the support of Tao community in the form of votes.
-The top 150 most voted candidates every period called an epoch (900 blocks of 2-second block-time) will be promoted to Masternode.
+The top 150 most voted candidates every period called an epoch (360 blocks of 5-second block-time) will be promoted to Masternode.
 This list will change dynamically every epoch.
 Only the 150 masternodes elected will be able to sign blocks and will receive rewards in the form of TAO. 
 
@@ -732,7 +730,7 @@ We also calculate the reward based on signed transactions.
 
 
 #### What is a 'checkpoint'?
-For each iteration of 900 blocks (called an epoch), a checkpoint block is created, which implements only reward works.
+For each iteration of 360 blocks (called an epoch), a checkpoint block is created, which implements only reward works.
 The masternode, who takes turn in the circular and sequential order to create blocks, has to scan all of the created blocks in the epoch and count the number of signatures.
 
 It is worth noting that token holders who unvote before the checkpoint block will not receive any shared reward in the Staking Reward portion.
@@ -747,7 +745,7 @@ Tao Wallet is the official mobile wallet for Tao,
 aiming to store the TAO native coin and tokens issued on Tao. 
 Tao Wallet also allows users to vote for masternodes and track rewards.
 
-Users can download TaoWallet at [App Store](https://itunes.apple.com/us/app/tao-wallet/id1436476145?mt=8) and [Play Store](https://play.google.com/store/apps/details?id=com.tao.wallet).
+Users can download TaoWallet at [App Store](https://itunes.apple.com/us/app/tao-wallet/id1436476145?mt=8) and [Play Store](https://play.google.com/store/apps/details?id=com.tao.wallet). 
 
 #### What tokens/coins does TaoWallet support?
 The current TaoWallet supports the native TAO coin on the Tao Mainnet.
@@ -827,7 +825,7 @@ TaoDEX will be the first relayer in Tao's decentralized exchange ecosystem.
 We expect TaoDex to be one of the most sophisticated Dexs out there, consequently users who like the Dex experience will use TaoDex.
 TaoDex will be the first to list any token running on top of Tao together with well-known cryptocurrencies such as BTC and ETH, and have the best liquidity for new Tao's tokens.
 
-With Tao's almost zero-fee, 2-second confirmations and 2,000 transactions per second, all relayers interacting with the Waihui Protocol will be fully decentralized and very efficient.
+With Tao's almost zero-fee, 5-second confirmations and 2,000 transactions per second, all relayers interacting with the Waihui Protocol will be fully decentralized and very efficient.
 
 #### What is a Relayer? How can I set up one?
 A decentralized exchange (DEX) in Tao's design for DEXs is a relayer that interacts with the underlying Waihui protocol.
