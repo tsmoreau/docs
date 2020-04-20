@@ -1,9 +1,6 @@
 ATTENTION: PLEASE READ CAREFULLY THESE TERMS AND CONDITIONS AS THEY AFFECT YOUR OBLIGATIONS AND LEGAL RIGHTS, INCLUDING, BUT NOT LIMITED TO LIMITATION OF LIABILITY. IF YOU DO NOT AGREE WITH THESE TERMS AND CONDITIONS DO NOT USE OUR SOFTWARE AND SERVICES
 
 ### AGREEMENT
-
-This licence agreement (Licence) is a legal agreement between you (Licensee or you) and Tao Pte. Ltd. (UEN: 201716924E), a company incorporated under the laws of Singapore, and its subsidiaries, affiliates and related corporations who own or operate the Website defined below (“Company”, “we”, “us” or “our”). By accessing or using the TaoWallet (defined below) or any part of it, you accept and agree to be bound by the Terms and the Privacy & Data Protection Policy (accessible at: https://tao.network). Please read the Privacy & Data Protection Policy to find out how we collect, use, disclose, process and protect your personal data, in accordance with the Personal Data Protection Act 2012 (No. 26 of 2012) of Singapore.
-
 If you do not agree to these Terms, you should stop accessing or using the TaoWallet immediately. In these Terms, the “TaoWallet” means the application owned and operated by the Company and its subsidiaries, affiliates and related corporations. The Company reserves the right to change, modify, add or remove any of terms contained in these Terms, at any time, for any reason. 
 
 ### ELIGIBILITY
@@ -14,7 +11,7 @@ By using TaoWallet, you represent and warrant that you meet all eligibility requ
 
 ### DEFINITIONS 
 - “Applicable Law” means the laws of the Republic of Singapore.
--“Company” means Tao Pte.Ltd.(UEN:UEN201716924E), a company incorporated under the laws of Singapore and having its registered office at 10 Anson Road, #22-15, International Plaza, Singapore 079903.
+-“Company” means the unincorporated association of developers which contributed to this code.
 
 - “Cryptocurrency(ies)” means a digital currency, also referred to as a token, in which encryption techniques are used to regulate the generation of units of the currency and to verify the transfer of the currency and which operates independently of the central bank of a country. Such digital currency is not legal tender issued by any central bank nor does it confer any interest in the ownership of, or debt relating to, any asset or property.
 - “Digital Assets” Similar to Cryptocurrencies, Digital Assets are not backed by governments or central banks. They are not protected by government deposit protection schemes. Digital Assets may be extremely volatile. Digital Assets technology is extremely nascent and unproven. Digital Assets software and providers are regularly subject to hacking attempts resulting in loss of funds.
