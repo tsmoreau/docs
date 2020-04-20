@@ -3,8 +3,6 @@
 
 ### AGREEMENT
 
-This licence agreement (Licence) is a legal agreement between you (Licensee or you) and Tao Pte. Ltd. (UEN: 201716924E), a company incorporated under the laws of Singapore, and its subsidiaries, affiliates and related corporations who own or operate the Website defined below (“Company”, “we”, “us” or “our”). By accessing or using the TaoIssuer (defined below) or any part of it, you accept and agree to be bound by the Terms and the Privacy & Data Protection Policy (accessible at: https://tao.network). Please read the Privacy & Data Protection Policy to find out how we collect, use, disclose, process and protect your personal data, in accordance with the Personal Data Protection Act 2012 (No. 26 of 2012) of Singapore.
-
 If you do not agree to these Terms, you should stop accessing or using the TaoIssuer immediately. In these Terms, the “TaoIssuer” means the application owned and operated by the Company and its subsidiaries, affiliates and related corporations. The Company reserves the right to change, modify, add or remove any of terms contained in these Terms, at any time, for any reason. 
 
 ### ELIGIBILITY
@@ -56,5 +54,5 @@ Unless otherwise required by law, in no event shall the owners of, or contributo
 The user of Shifu agrees to arbitrate any dispute arising from or in connection with the service or this disclaimer, except for disputes related to copyrights, logos, trademarks, trade names, trade secrets or patents.
 
 ### LAST AMENDMENT
-This disclaimer was amended for the last time on July  8th, 2019.
+This disclaimer was amended for the last time on April  20th, 2020.
 
