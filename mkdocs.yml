@@ -14,8 +14,8 @@ plugins:
   - search
 
 redirects:
-  'taoscan/features/index': 'products/taoscan/features/index'
-  'shifu/features/index': 'products/shifu/features/index'
+  'taoscan/features/index': 'ecosystem/taoscan/features/index'
+  'shifu/features/index': 'ecosystem/shifu/features/index'
 
 markdown_extensions:
   - admonition
@@ -99,20 +99,20 @@ nav:
       - Standard & Specification:
           - TRC2 Specification: wp-and-research/specs/trc2_standard.md
       - TaoP whitepaper: wp-and-research/privacy.md
-    - Products:
-      - Shifu: products/shifu/features.md
+    - Ecosystem:
+      - Shifu: ecosystem/shifu/features.md
     #   - Contributing: misc/wip.md
-      - TaoScan: products/taoscan/features.md
+      - TaoScan: ecosystem/taoscan/features.md
       - TaoWallet:
-        - Features: products/taowallet/features.md
-        - Voting with TaoWallet: products/taowallet/voting.md
-        - Terms & Privacy: products/taowallet/terms.md
+        - Features: ecosystem/taowallet/features.md
+        - Voting with TaoWallet: ecosystem/taowallet/voting.md
+        - Terms & Privacy: ecosystem/taowallet/terms.md
       - TaoBridge:
-        - FAQ: products/taobridge/faq.md
+        - FAQ: ecosystem/taobridge/faq.md
       - TaoIssuer:
-        - Overview: products/taoissuer/index.md
-        - Term Of Condition: products/taoissuer/termofcondition.md
-        - Policy Privacy: products/taoissuer/policyprivacy.md
+        - Overview: ecosystem/taoissuer/index.md
+        - Term Of Condition: ecosystem/taoissuer/termofcondition.md
+        - Policy Privacy: ecosystem/taoissuer/policyprivacy.md
     #   - Getting started: misc/wip.md
     #   - Contributing: misc/wip.md
 copyright: If you wish to improve this site, please <a href="https://github.com/taoblockchain/docs/issues/new"><i class="fa fa-github"></i> open an issue</a> or <a href="https://github.com/taoblockchain/docs/compare"><i class="fa fa-github"></i> send a pull request</a>.<br>Ta0Docs v0.1.0. Tao Project 2020.
