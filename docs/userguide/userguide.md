@@ -35,6 +35,11 @@ Full Node</a>
 <details>
 <summary>
 <a href="http://www.ironspider.ca/format_text/fontstyles.htm">
+Voting</a>
+
+<details>
+<summary>
+<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
 Governance</a>
 
 </summary>
