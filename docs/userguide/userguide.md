@@ -2,7 +2,7 @@
 
 *[Wallets](#wallets)<br>
 [Voting & Governance](#voting--governance)<br>
-[Chain Explorer](#chain)*
+[Block Explorer](#block-explorer)*
 
 ## Wallets
 
@@ -46,21 +46,13 @@ Governance</a>
 <p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
 </details>
 
-## Chain Explorer
+## Block Explorer
 
-<details>
-<summary>
-<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
-What is a Chain Explorer</a>
-</summary>
-<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
-</details>
+A block explorer is a tool used to examine the blockchain. Use it to find transactions, check address balances, see visualations of on-chain data, and generally learn more about the chain. TaoScan is the name of the Tao Network's native block explorer. Links to both it and to the full article on it's use can be found below.
 
-<details>
-<summary>
-<a href="http://www.ironspider.ca/format_text/fontstyles.htm">
-Tao Chain Explorer(s)</a>
-</summary>
-<p>It's because the details block is html5. If you want to modify it your best bet is using html5. </p>
-</details>
+TaoScan
+
+TaoScan Use Article
+
+
 
