@@ -1,7 +1,7 @@
 # User Guide
 
 *[Wallets](#Wallets)<br>
-Voting & Governance<br>
+[Voting & Governance](#voting--governance)<br>
 Chain Explorer*
 
 ## Wallets
