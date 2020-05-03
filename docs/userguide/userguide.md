@@ -1,4 +1,4 @@
-# User Guide
+# Tao User Guide
 
 *[Wallets](#wallets)<br>
 [Voting & Governance](#voting--governance)<br>
