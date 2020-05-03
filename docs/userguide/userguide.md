@@ -36,6 +36,8 @@ Full Node</a>
 <summary>
 <a href="http://www.ironspider.ca/format_text/fontstyles.htm">
 Voting</a>
+</details>
+</summary>
 
 <details>
 <summary>
