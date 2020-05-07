@@ -1,6 +1,34 @@
-Please note all Tao2 documentation currently should be considered a draft and some details are subject to revision
+*Please note all Tao2 documentation currently should be considered a draft and some details are subject to revision*
 
-# Designed by the Music Industry, for the Music Industry
+# Introduction to the  Tao Network ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+### A Cryptocurrency Community Designed for the Music Industry, by the Music Industry
+
+Tao is an open-source cryptocurrency project designed specifcally for use by the music industry to empower artists. On this page you will find a summary of the Tao project to date, as well as links to relevant parts of the documentation.
+
+
+Summary
+
+User Guide
+
+Ecosystem Guide
+
+Masternode Guide
+
+Developer Guide
+
+DEX Guide
+
+FAQ/Misc
+
+
+
+
+
+
+
+
+f
 
 As the Tao Network approaches its fourth year of consistent, flawless operation it has become clear that the industry, consumers, and markets have become more sophisticated, the codebase has not and a major technological overhaul is required. The vast experience we have gained serving the interests of the music industry have crystalized the technological requirements of a cryptocurrency which may truly begin to disrupt the power structures which dominate the landscape.  A platform which would enable a “DeFi for music” brings with it not only a set of technological prerequisites, but consensus must remain true to the ethics and ideals of the music industry we have come to serve.  It is towards these noble ends that we are creating the means to manifest that future: Tao2.
 
